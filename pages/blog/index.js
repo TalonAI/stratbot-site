@@ -1,26 +1,33 @@
-export default function Blog() {
+export default function BlogIndex() {
   return (
-    <>
-      <nav className="w-full bg-white border-b border-gray-200 py-4 px-6 sticky top-0 z-50 shadow-sm">
-        <div className="max-w-5xl mx-auto flex justify-between items-center">
-          <a href="/" className="text-xl font-bold text-gray-900">StratBot</a>
-          <div className="space-x-6">
-            <a href="/" className="text-gray-700 hover:text-blue-600 transition">Home</a>
-            <a href="/team" className="text-gray-700 hover:text-blue-600 transition">Team</a>
-            <a href="/contact" className="text-gray-700 hover:text-blue-600 transition">Contact</a>
-            <a href="/blog" className="text-gray-700 hover:text-blue-600 transition">Blog</a>
-          </div>
-        </div>
-      </nav>
+    <main className="max-w-4xl mx-auto px-6 py-12 space-y-12">
+      <h1 className="text-4xl font-bold text-center">StratBot Insights</h1>
 
-      <main className="max-w-4xl mx-auto px-6 py-12 space-y-10">
-        <h1 className="text-4xl font-bold text-center">Insights from the Field</h1>
-        <p className="text-center text-gray-600">Real stories. Practical strategy. AI you can use today.</p>
-        <ul className="list-disc list-inside space-y-4 mt-6 text-left text-gray-800">
-          <li><a href="#" className="text-blue-600 hover:underline">How AI Helped Me Make Decisions—Not Just Get Overwhelmed</a></li>
-          <li><a href="#" className="text-blue-600 hover:underline">From Strategy to Execution: AI Gave Me Daily Tactical Clarity</a></li>
-        </ul>
-      </main>
-    </>
+      <section className="space-y-8">
+        <article className="border rounded-xl p-6 shadow hover:shadow-md transition">
+          <h2 className="text-2xl font-semibold mb-2">
+            <a href="/blog/decision-velocity" className="text-blue-600 hover:underline">
+              From Information Paralysis to Decision Velocity: How AI Transformed My Leadership
+            </a>
+          </h2>
+          <p className="text-gray-700">
+            I was drowning in inputs but struggling to make timely, strategic decisions. Here's how a custom AI Advisor changed my process—and my outcomes.
+          </p>
+          <a href="/blog/decision-velocity" className="text-blue-500 mt-2 inline-block hover:underline">Read more →</a>
+        </article>
+
+        <article className="border rounded-xl p-6 shadow hover:shadow-md transition">
+          <h2 className="text-2xl font-semibold mb-2">
+            <a href="/blog/strategy-to-execution" className="text-blue-600 hover:underline">
+              From Strategic Drift to Consistent Revenue: How I Closed the Execution Gap
+            </a>
+          </h2>
+          <p className="text-gray-700">
+            How I turned my strategic goals into daily execution and unlocked $15K/month in new revenue. Includes the actual filters and frameworks I use.
+          </p>
+          <a href="/blog/strategy-to-execution" className="text-blue-500 mt-2 inline-block hover:underline">Read more →</a>
+        </article>
+      </section>
+    </main>
   );
 }
