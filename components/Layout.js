@@ -4,17 +4,15 @@ export default function Layout({ children }) {
   return (
     <div className="min-h-screen flex flex-col">
       <header className="bg-white shadow">
-     <nav className="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center space-x-4">
-          <Link href="/" className="text-xl font-bold text-gray-900 mr-8">
-			StratBot
-		  </Link>
+		<nav className="flex justify-between items-center px-8 py-4 border-b shadow-sm">
+			<div className="text-2xl font-bold text-black">StratBot</div>
+			<div className="space-x-6 text-lg">
+				<a href="/team" className="text-gray-700 hover:text-black">Team</a>
+				<a href="/contact" className="text-gray-700 hover:text-black">Contact</a>
+				<a href="/blog" className="text-gray-700 hover:text-black">Blog</a>
+			</div>
+	</nav>
 
-          <div className="space-x-6">
-            <Link href="/team" className="text-gray-700 hover:text-blue-600">Team</Link>
-            <Link href="/contact" className="text-gray-700 hover:text-blue-600">Contact</Link>
-            <Link href="/blog" className="text-gray-700 hover:text-blue-600">Blog</Link>
-          </div>
-        </nav>
       </header>
 
       <main className="flex-grow">{children}</main>
