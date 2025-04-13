@@ -1,8 +1,7 @@
-
 export default function StrategyToExecutionBlog() {
   return (
     <main className="max-w-3xl mx-auto px-6 py-12 space-y-8">
-      <h1 className="text-4xl font-bold">From Strategic Drift to Consistent Revenue: How I Closed the Execution Gap</h1>
+      <h1 className="text-4xl font-bold text-center">From Strategic Drift to Consistent Revenue: How I Closed the Execution Gap</h1>
 
       <p className="text-gray-700 text-lg">
         I was hemorrhaging $4,200 monthly on misaligned initiatives while my calendar showed the brutal truth: 72% reactive work, leaving just 5.5 hours weekly for true revenue-generating activities.

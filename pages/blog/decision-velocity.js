@@ -1,7 +1,7 @@
 export default function DecisionVelocityBlog() {
   return (
     <main className="max-w-3xl mx-auto px-6 py-12 space-y-8">
-      <h1 className="text-4xl font-bold">From Information Paralysis to Decision Velocity: How AI Transformed My Leadership</h1>
+      <h1 className="text-4xl font-bold text-center">From Information Paralysis to Decision Velocity: How AI Transformed My Leadership</h1>
 
       <p className="text-gray-700 text-lg">
         The data told the story: I was processing 187 emails, 63 Slack messages, and 3.2 hours of meetings daily—yet making only 2–3 meaningful strategic decisions per week. My decision backlog had grown to 14 critical items, some waiting 27+ days for resolution.
