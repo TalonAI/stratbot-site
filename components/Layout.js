@@ -5,19 +5,17 @@ export default function Layout({ children }) {
     <div className="min-h-screen flex flex-col">
       <nav className="bg-white shadow-md">
         <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
-          <div>
-            <Link href="/" passHref>
-              <a className="text-2xl font-extrabold text-gray-900 hover:text-blue-600">StratBot</a>
-            </Link>
-          </div>
-          <div className="flex space-x-6 text-lg">
-            <Link href="/team" passHref>
+          <Link href="/" legacyBehavior>
+            <a className="text-2xl font-extrabold text-gray-900 hover:text-blue-600">StratBot</a>
+          </Link>
+          <div className="space-x-6 text-lg flex">
+            <Link href="/team" legacyBehavior>
               <a className="text-gray-700 hover:text-blue-600">Team</a>
             </Link>
-            <Link href="/contact" passHref>
+            <Link href="/contact" legacyBehavior>
               <a className="text-gray-700 hover:text-blue-600">Contact</a>
             </Link>
-            <Link href="/blog" passHref>
+            <Link href="/blog" legacyBehavior>
               <a className="text-gray-700 hover:text-blue-600">Blog</a>
             </Link>
           </div>
