@@ -2,29 +2,28 @@ import Link from "next/link";
 
 export default function Layout({ children }) {
   return (
-    <div className="flex min-h-screen">
-      {/* Sidebar Navigation */}
-      <nav className="w-48 bg-white border-r px-6 py-8 space-y-6">
-        <Link href="/">
-          <a className="text-3xl font-extrabold text-gray-900 hover:text-blue-600">StratBot</a>
-        </Link>
-        <div className="flex flex-col space-y-4 text-lg">
-          <Link href="/contact">
-            <a className="text-gray-700 hover:text-blue-600">Contact</a>
-          </Link>
-          <Link href="/team">
-            <a className="text-gray-700 hover:text-blue-600">Team</a>
-          </Link>
-          <Link href="/blog">
-            <a className="text-gray-700 hover:text-blue-600">Blog</a>
+    <div className="min-h-screen flex bg-[#fdfaf3] text-gray-800">
+      {/* Sidebar */}
+      <aside className="w-52 border-r-4 border-yellow-500 p-6 bg-white shadow-lg flex flex-col justify-start">
+        <div className="mb-10">
+          <Link href="/" className="text-3xl font-extrabold text-gray-900 hover:text-yellow-600">
+            StratBot
           </Link>
         </div>
-      </nav>
+        <nav className="flex flex-col space-y-6 text-lg font-semibold">
+          <Link href="/contact" className="hover:text-yellow-600">Contact</Link>
+          <Link href="/team" className="hover:text-yellow-600">Team</Link>
+          <Link href="/blog" className="hover:text-yellow-600">Blog</Link>
+        </nav>
+      </aside>
 
-      {/* Page Content */}
-      <main className="flex-grow bg-white px-8 py-12">
-        {children}
-      </main>
+      {/* Main content */}
+      <div className="flex-1 p-10 max-w-6xl mx-auto bg-white border-l-4 border-yellow-400 shadow-2xl rounded-md">
+        <main className="pb-12">{children}</main>
+        <footer className="text-sm text-gray-500 border-t pt-4 text-center">
+          &copy; 2025 StratBot. All rights reserved.
+        </footer>
+      </div>
     </div>
   );
 }
