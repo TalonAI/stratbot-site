@@ -10,25 +10,29 @@ const team = [
 
 export default function Team() {
   return (
-    <div className="max-w-6xl mx-auto px-4 py-12">
-      <h1 className="text-3xl font-extrabold mb-12 text-left">Meet the StratBot Team</h1>
+    <div className="flex flex-col items-center justify-center gap-10 mt-10">
+  <h1 className="text-3xl font-extrabold text-center">Meet the StratBot Team</h1>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-y-12 gap-x-6">
-        {team.map((member, i) => (
-          <div key={i} className="flex flex-col items-center">
-            <div className="w-32 h-32 relative mb-4">
-              <Image
-                src={member.image}
-                alt={member.name}
-                layout="fill"
-                objectFit="cover"
-                className="rounded-full"
-              />
-            </div>
-            <p className="text-lg font-semibold">{member.name}</p>
-          </div>
-        ))}
+  {/* Top row: 3 members */}
+  <div className="grid grid-cols-3 gap-10">
+    {teamMembers.slice(0, 3).map((member, idx) => (
+      <div key={idx} className="flex flex-col items-center">
+        <img src={member.image} alt={member.name} className="w-32 h-32 rounded-full object-cover" />
+        <p className="mt-4 text-lg font-semibold">{member.name}</p>
       </div>
-    </div>
+    ))}
+  </div>
+
+  {/* Bottom row: center 2 members */}
+  <div className="grid grid-cols-2 gap-10">
+    {teamMembers.slice(3).map((member, idx) => (
+      <div key={idx} className="flex flex-col items-center">
+        <img src={member.image} alt={member.name} className="w-32 h-32 rounded-full object-cover" />
+        <p className="mt-4 text-lg font-semibold">{member.name}</p>
+      </div>
+    ))}
+  </div>
+</div>
+
   );
 }
