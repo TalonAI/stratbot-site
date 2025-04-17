@@ -11,10 +11,16 @@ export default function Layout({ children }) {
           </Link>
         </div>
         <nav className="flex flex-col space-y-6 text-lg font-semibold">
-          <Link href="/contact" className="hover:text-yellow-600">Contact</Link>
-          <Link href="/team" className="hover:text-yellow-600">Team</Link>
-          <Link href="/blog" className="hover:text-yellow-600">Blog</Link>
-        </nav>
+  		<Link href="/contact">
+    			<span className="hover:text-yellow-600 cursor-pointer">Contact</span>
+  		</Link>
+  		<Link href="/team">
+    			<span className="hover:text-yellow-600 cursor-pointer">Team</span>
+  		</Link>
+  		<Link href="/blog">
+    			<span className="hover:text-yellow-600 cursor-pointer">Blog</span>
+  		</Link>
+	</nav>
       </aside>
 
       {/* Main content */}
