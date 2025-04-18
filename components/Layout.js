@@ -33,10 +33,10 @@ export default function Layout({ children }) {
         </nav>
       </aside>
 
-      {/* Main content */}
-      <div className="flex-1 p-10 max-w-6xl mx-auto bg-white border-l-4 border-yellow-400 shadow-2xl rounded-md">
-        <main className="pb-12">{children}</main>
-        <footer className="text-sm text-gray-500 border-t pt-4 text-center">
+      {/* Main content - Reduced padding */}
+      <div className="flex-1 p-4 max-w-6xl mx-auto bg-white border-l-4 border-yellow-400 shadow-2xl rounded-md">
+        <main>{children}</main>
+        <footer className="text-sm text-gray-500 border-t pt-4 mt-8 text-center">
           &copy; {new Date().getFullYear()} StratBot. All rights reserved.
         </footer>
       </div>
