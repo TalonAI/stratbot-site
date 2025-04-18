@@ -1,3 +1,5 @@
+// components/Layout.js
+
 import Link from "next/link";
 
 export default function Layout({ children }) {
@@ -11,16 +13,18 @@ export default function Layout({ children }) {
           </Link>
         </div>
         <nav className="flex flex-col space-y-6 text-lg font-semibold">
-  		<Link href="/contact">
-    			<span className="hover:text-yellow-600 cursor-pointer">Contact</span>
-  		</Link>
-  		<Link href="/team">
-    			<span className="hover:text-yellow-600 cursor-pointer">Team</span>
-  		</Link>
-  		<Link href="/blog">
-    			<span className="hover:text-yellow-600 cursor-pointer">Blog</span>
-  		</Link>
-	</nav>
+          <Link href="/contact" className="hover:text-yellow-600">Contact</Link>
+          <Link href="/team" className="hover:text-yellow-600">Team</Link>
+          <Link href="/blog" className="hover:text-yellow-600">Blog</Link>
+          <a
+            href="https://calendly.com/paulmaggio56"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:text-yellow-600"
+          >
+            Book a Call
+          </a>
+        </nav>
       </aside>
 
       {/* Main content */}
