@@ -3,8 +3,8 @@ import Link from "next/link"
 export default function Layout({ children }) {
   return (
     <div className="min-h-screen flex bg-gradient-to-br from-slate-50 to-blue-50 text-gray-800">
-      {/* Sidebar */}
-      <aside className="w-64 bg-white shadow-lg p-6 flex flex-col justify-start fixed h-full border-r-4 border-blue-500">
+      {/* Sidebar - increased width from w-64 to w-72 */}
+      <aside className="w-72 bg-white shadow-lg p-6 flex flex-col justify-start fixed h-full border-r-4 border-blue-500">
         <div className="mb-10">
           <Link href="/" className="text-3xl font-extrabold block">
             <span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-indigo-700">StratBot</span>
@@ -75,7 +75,7 @@ export default function Layout({ children }) {
             href="https://calendly.com/paulmaggio56"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-gray-700 hover:text-blue-600 transition-all duration-200 transform hover:translate-x-1 flex items-center"
+            className="text-gray-700 hover:text-blue-600 transition-all duration-200 transform hover:translate-x-1 flex items-center whitespace-nowrap"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -100,8 +100,8 @@ export default function Layout({ children }) {
         </div>
       </aside>
 
-      {/* Main content */}
-      <div className="flex-1 ml-64">
+      {/* Main content - adjusted margin to match wider sidebar */}
+      <div className="flex-1 ml-72">
         <main className="p-8 max-w-5xl mx-auto">{children}</main>
       </div>
     </div>

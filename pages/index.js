@@ -105,9 +105,10 @@ export default function Home() {
           </blockquote>
           <blockquote className="bg-white p-6 rounded-xl shadow-lg border-t-2 border-blue-500 hover:shadow-xl transition transform hover:-translate-y-1">
             <p className="text-gray-700 italic">
-              "In one week, I've saved 7 hours and clarified three major strategic priorities. I'm hooked."
+              "I was struggling (really putting off) creating a Business Plan and LOI for a SMB I wanted to purchase.
+              With my StratBot, we got them both done in one short afternoon."
             </p>
-            <footer className="text-sm text-gray-500 pt-4 font-medium">— Founder, Professional Services Firm</footer>
+            <footer className="text-sm text-gray-500 pt-4 font-medium">— Business Buyer</footer>
           </blockquote>
           <blockquote className="bg-white p-6 rounded-xl shadow-lg border-t-2 border-blue-500 hover:shadow-xl transition transform hover:-translate-y-1">
             <p className="text-gray-700 italic">
