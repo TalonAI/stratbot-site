@@ -9,28 +9,28 @@ export default function Layout({ children }) {
           {/* Center-justified nav */}
           <div className="flex justify-evenly items-center h-16">
             <Link href="/" className="flex items-center text-blue-700 font-bold text-2xl hover:text-blue-800">
-              StratBot
+              StratBot    
             </Link>
             <Link
               href="/contact"
               className="flex items-center text-gray-700 hover:text-blue-700"
             >
               <Mail className="w-5 h-5 mr-2" />
-              <span>Contact</span>
+              <span>Contact    </span>
             </Link>
             <Link
               href="/team"
               className="flex items-center text-gray-700 hover:text-blue-700"
             >
               <Users className="w-5 h-5 mr-2" />
-              <span>Team</span>
+              <span>Team    </span>
             </Link>
             <Link
               href="/blog"
               className="flex items-center text-gray-700 hover:text-blue-700"
             >
               <FileText className="w-5 h-5 mr-2" />
-              <span>Blog</span>
+              <span>Blog    </span>
             </Link>
             <Link
               href="/book"
