@@ -6,26 +6,26 @@ export default function Layout({ children }) {
     <div className="min-h-screen flex flex-col bg-[#fdfaf3] text-gray-800">
       <nav className="w-full bg-white shadow-sm">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          {/* Centered nav with uniform gaps */}
-          <div className="flex items-center justify-center h-16 space-x-12">
-            <Link href="/" className="flex items-center text-blue-700 font-bold text-2xl hover:text-blue-800">
-              StratBot
+          {/* Simple inline nav with manual spacing */}
+          <div className="flex items-center h-16">
+            <Link href="/" className="flex items-center text-blue-700 font-bold text-2xl hover:text-blue-800 mr-8">
+              StratBot    
             </Link>
-            <Link href="/contact" className="flex items-center text-gray-700 hover:text-blue-700">
+            <Link href="/contact" className="flex items-center text-gray-700 hover:text-blue-700 mr-8">
               <Mail className="w-5 h-5 mr-2" />
-              <span>Contact</span>
+              Contact    
             </Link>
-            <Link href="/team" className="flex items-center text-gray-700 hover:text-blue-700">
+            <Link href="/team" className="flex items-center text-gray-700 hover:text-blue-700 mr-8">
               <Users className="w-5 h-5 mr-2" />
-              <span>Team</span>
+              Team    
             </Link>
-            <Link href="/blog" className="flex items-center text-gray-700 hover:text-blue-700">
+            <Link href="/blog" className="flex items-center text-gray-700 hover:text-blue-700 mr-8">
               <FileText className="w-5 h-5 mr-2" />
-              <span>Blog</span>
+              Blog    
             </Link>
             <Link href="/book" className="flex items-center text-gray-700 hover:text-blue-700">
               <Calendar className="w-5 h-5 mr-2" />
-              <span>Book a Call</span>
+              Book a Call    
             </Link>
           </div>
         </div>
