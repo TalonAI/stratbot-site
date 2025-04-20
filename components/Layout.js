@@ -12,7 +12,7 @@ export default function Layout({ children }) {
               StratBot
             </Link>
             {/* Navigation links on right */}
-            <div className="flex space-x-8 items-center">
+            <div className="flex space-x-6 lg:space-x-8">
               <Link
                 href="/contact"
                 className="flex items-center text-gray-700 hover:text-blue-700"
