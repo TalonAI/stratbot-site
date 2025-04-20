@@ -6,31 +6,31 @@ export default function Layout({ children }) {
     <div className="min-h-screen flex flex-col bg-[#fdfaf3] text-gray-800">
       <nav className="w-full bg-white shadow-sm">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          {/* Center-justified nav */}
-          <div className="flex justify-evenly items-center h-16">
+          {/* Centered nav with explicit gaps */}
+          <div className="flex justify-center items-center h-16 space-x-12">
             <Link href="/" className="flex items-center text-blue-700 font-bold text-2xl hover:text-blue-800">
-              StratBot    
+              StratBot
             </Link>
             <Link
               href="/contact"
               className="flex items-center text-gray-700 hover:text-blue-700"
             >
               <Mail className="w-5 h-5 mr-2" />
-              <span>Contact    </span>
+              <span>Contact</span>
             </Link>
             <Link
               href="/team"
               className="flex items-center text-gray-700 hover:text-blue-700"
             >
               <Users className="w-5 h-5 mr-2" />
-              <span>Team    </span>
+              <span>Team</span>
             </Link>
             <Link
               href="/blog"
               className="flex items-center text-gray-700 hover:text-blue-700"
             >
               <FileText className="w-5 h-5 mr-2" />
-              <span>Blog    </span>
+              <span>Blog</span>
             </Link>
             <Link
               href="/book"
