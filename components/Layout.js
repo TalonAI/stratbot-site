@@ -6,37 +6,25 @@ export default function Layout({ children }) {
     <div className="min-h-screen flex flex-col bg-[#fdfaf3] text-gray-800">
       <nav className="w-full bg-white shadow-sm">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          {/* Centered nav with explicit gaps */}
-          <div className="flex justify-center items-center h-16 space-x-12">
+          {/* Centered nav with icon margin */}
+          <div className="flex justify-center items-center h-16">
             <Link href="/" className="flex items-center text-blue-700 font-bold text-2xl hover:text-blue-800">
               StratBot
             </Link>
-            <Link
-              href="/contact"
-              className="flex items-center text-gray-700 hover:text-blue-700"
-            >
-              <Mail className="w-5 h-5 mr-2" />
+            <Link href="/contact" className="flex items-center text-gray-700 hover:text-blue-700">
+              <Mail className="w-5 h-5 ml-8 mr-2" />
               <span>Contact</span>
             </Link>
-            <Link
-              href="/team"
-              className="flex items-center text-gray-700 hover:text-blue-700"
-            >
-              <Users className="w-5 h-5 mr-2" />
+            <Link href="/team" className="flex items-center text-gray-700 hover:text-blue-700">
+              <Users className="w-5 h-5 ml-8 mr-2" />
               <span>Team</span>
             </Link>
-            <Link
-              href="/blog"
-              className="flex items-center text-gray-700 hover:text-blue-700"
-            >
-              <FileText className="w-5 h-5 mr-2" />
+            <Link href="/blog" className="flex items-center text-gray-700 hover:text-blue-700">
+              <FileText className="w-5 h-5 ml-8 mr-2" />
               <span>Blog</span>
             </Link>
-            <Link
-              href="/book"
-              className="flex items-center text-gray-700 hover:text-blue-700"
-            >
-              <Calendar className="w-5 h-5 mr-2" />
+            <Link href="/book" className="flex items-center text-gray-700 hover:text-blue-700">
+              <Calendar className="w-5 h-5 ml-8 mr-2" />
               <span>Book a Call</span>
             </Link>
           </div>
