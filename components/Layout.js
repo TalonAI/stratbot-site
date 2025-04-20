@@ -6,15 +6,15 @@ export default function Layout({ children }) {
       {/* Horizontal Navbar */}
       <header className="bg-white shadow-md border-b-4 border-blue-500">
         <div className="container mx-auto px-6 py-4">
-          <div className="flex items-center justify-between">
-            {/* Logo */}
+          <div className="flex items-center justify-between w-full">
+            {/* Logo - Left justified */}
             <Link href="/" className="text-2xl font-extrabold">
               <span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-indigo-700">
                 StratBot
               </span>
             </Link>
 
-            {/* Navigation */}
+            {/* Navigation - Right justified */}
             <nav className="flex items-center space-x-8">
               <Link
                 href="/contact"
