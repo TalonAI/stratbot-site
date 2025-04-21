@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { Mail, Users, FileText, Calendar } from 'lucide-react';
+import { Mail, Users, FileText, Calendar, Layers } from 'lucide-react';
 
 export default function Layout({ children }) {
   return (
@@ -10,6 +10,12 @@ export default function Layout({ children }) {
             <li className="px-6">
               <Link href="/" className="text-blue-700 font-bold text-xl hover:text-blue-800">
                 StratBot&nbsp;&nbsp;&nbsp;
+              </Link>
+            </li>
+            <li className="px-6">
+              <Link href="/services" className="flex items-center text-gray-700 hover:text-blue-700">
+                <Layers className="w-5 h-5 mr-2" />
+                Execution Stacks&nbsp;&nbsp;&nbsp;
               </Link>
             </li>
             <li className="px-6">
