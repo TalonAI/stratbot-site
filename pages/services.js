@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from 'next/link';
 
 export default function Services() {
   return (
@@ -33,7 +34,7 @@ export default function Services() {
           <li>Includes onboarding and usage playbook</li>
         </ul>
         <p className="mb-4 text-gray-700">Outcome: A thinking partner with no agenda—just clarity and leverage.</p>
-        <a href="/contact" className="text-blue-600 font-semibold hover:underline">Build My Strategic Advisor →</a>
+        <Link href="/services/clarity" className="text-blue-600 font-semibold hover:underline">Explore the Clarity Stack →</Link>
       </section>
 
       {/* Command Stack */}
@@ -47,7 +48,7 @@ export default function Services() {
           <li>Training you and your team to use AI like an operator—not a tinkerer</li>
         </ul>
         <p className="mb-4 text-gray-700">Outcome: You move faster, think clearer, and lead without bottlenecking execution.</p>
-        <a href="/contact" className="text-blue-600 font-semibold hover:underline">Upgrade My Executive Stack →</a>
+        <Link href="/services/command" className="text-blue-600 font-semibold hover:underline">Explore the Command Stack →</Link>
       </section>
 
       {/* Scale Stack */}
@@ -61,7 +62,7 @@ export default function Services() {
           <li>Ongoing fractional AI leadership to own implementation and iteration</li>
         </ul>
         <p className="mb-4 text-gray-700">Outcome: An organization that executes faster, scales smarter, and adapts to change in real time.</p>
-        <a href="/contact" className="text-blue-600 font-semibold hover:underline">Install My AI Operating System →</a>
+        <Link href="/services/scale" className="text-blue-600 font-semibold hover:underline">Explore the Scale Stack →</Link>
       </section>
 
       {/* Final CTA */}
