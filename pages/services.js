@@ -1,77 +1,64 @@
-import React from 'react';
 import Link from 'next/link';
+import { Brain, ClipboardList, TrendingUp } from 'lucide-react';
 
 export default function Services() {
   return (
-    <div className="bg-white text-gray-900">
+    <section className="max-w-6xl mx-auto py-16 px-4">
+      <h1 className="text-4xl font-bold text-center text-navy mb-12">
+        Executive Stacks
+      </h1>
 
-      {/* Hero Section */}
-      <section className="text-center py-20 px-6 max-w-4xl mx-auto">
-        <h1 className="text-4xl md:text-5xl font-extrabold mb-4">StratBot: AI Execution Stacks for Founders and Operators</h1>
-        <p className="text-lg md:text-xl text-gray-600 mb-6">Multiply your decisions. Build leverage into your systems. Scale execution—without hiring another person.</p>
-        <div className="space-x-4">
-          <a href="/contact" className="bg-blue-600 text-white px-6 py-3 rounded-xl shadow hover:bg-blue-700 transition">Book a Strategy Call</a>
-          <a href="#stacks" className="text-blue-600 font-semibold hover:underline">See the Stacks ↓</a>
+      <div className="grid gap-10 sm:grid-cols-2 lg:grid-cols-3">
+        {/* Clarity */}
+        <div className="card">
+          <Brain className="card-icon" />
+          <h3 className="card-title">Clarity&nbsp;Stack</h3>
+          <p className="card-copy">
+            Personalized Decision Companion that cuts noise and surfaces priorities.
+          </p>
+          <Link href="/clarity" className="card-cta">Learn&nbsp;More</Link>
         </div>
-      </section>
 
-      {/* Intro Section */}
-      <section className="bg-gray-50 py-12 px-6" id="stacks">
-        <div className="max-w-3xl mx-auto text-center">
-          <h2 className="text-3xl font-bold mb-4">3 Execution Stacks for AI Leverage</h2>
-          <p className="text-gray-600">StratBot delivers execution-ready AI capabilities designed to evolve with your leadership. Start with clarity. Move to control. Then scale the entire company.</p>
+        {/* Command */}
+        <div className="card">
+          <ClipboardList className="card-icon" />
+          <h3 className="card-title">Command&nbsp;Stack</h3>
+          <p className="card-copy">
+            SOP & KPI engine that keeps your team in sync and on-mission.
+          </p>
+          <Link href="/command" className="card-cta">Learn&nbsp;More</Link>
         </div>
-      </section>
 
-      {/* Clarity Stack */}
-      <section className="py-16 px-6 max-w-5xl mx-auto">
-        <h3 className="text-2xl font-bold mb-2 text-blue-600">Clarity Stack: Your Strategic Advisor</h3>
-        <p className="text-xl font-semibold mb-4">Start with clarity—your own AI Advisor that thinks like you do.</p>
-        <ul className="list-disc list-inside text-gray-700 mb-4">
-          <li>Custom GPT trained on your documents, tone, and decision patterns</li>
-          <li>Built to support strategic decisions, write memos, prep meetings</li>
-          <li>Delivers the hard truth—this is the voice you need, not your spouse, not your board, not your team</li>
-          <li>Includes onboarding and usage playbook</li>
-        </ul>
-        <p className="mb-4 text-gray-700">Outcome: A thinking partner with no agenda—just clarity and leverage.</p>
-        <Link href="/services/clarity" className="text-blue-600 font-semibold hover:underline">Explore the Clarity Stack →</Link>
-      </section>
+        {/* Scale */}
+        <div className="card">
+          <TrendingUp className="card-icon" />
+          <h3 className="card-title">Scale&nbsp;Stack</h3>
+          <p className="card-copy">
+            Automations and dashboards to grow without founder bottlenecks.
+          </p>
+          <Link href="/call" className="card-cta">Book&nbsp;a&nbsp;Call</Link>
+        </div>
+      </div>
 
-      {/* Command Stack */}
-      <section className="bg-gray-50 py-16 px-6 max-w-5xl mx-auto">
-        <h3 className="text-2xl font-bold mb-2 text-blue-600">Command Stack: The Augmented Executive</h3>
-        <p className="text-xl font-semibold mb-4">Scale your leadership, decisions, and deals with AI-enhanced workflows.</p>
-        <ul className="list-disc list-inside text-gray-700 mb-4">
-          <li>GPT agents for deal prep, strategy reviews, and async leadership</li>
-          <li>Automation of repetitive workflows across ops, projects, and meetings</li>
-          <li>AI task managers and assistant workflows embedded into your tools</li>
-          <li>Training you and your team to use AI like an operator—not a tinkerer</li>
-        </ul>
-        <p className="mb-4 text-gray-700">Outcome: You move faster, think clearer, and lead without bottlenecking execution.</p>
-        <Link href="/services/command" className="text-blue-600 font-semibold hover:underline">Explore the Command Stack →</Link>
-      </section>
-
-      {/* Scale Stack */}
-      <section className="py-16 px-6 max-w-5xl mx-auto">
-        <h3 className="text-2xl font-bold mb-2 text-blue-600">Scale Stack: The AI Operating System</h3>
-        <p className="text-xl font-semibold mb-4">Turn your entire company into an AI-native execution engine.</p>
-        <ul className="list-disc list-inside text-gray-700 mb-4">
-          <li>Org-wide AI audit and implementation roadmap</li>
-          <li>Shared Team GPTs for Sales, Ops, Support and beyond</li>
-          <li>Redesigns of meeting rhythms, SOPs, and internal comms with AI leverage</li>
-          <li>Ongoing fractional AI leadership to own implementation and iteration</li>
-        </ul>
-        <p className="mb-4 text-gray-700">Outcome: An organization that executes faster, scales smarter, and adapts to change in real time.</p>
-        <Link href="/services/scale" className="text-blue-600 font-semibold hover:underline">Explore the Scale Stack →</Link>
-      </section>
-
-      {/* Final CTA */}
-      <section className="bg-blue-600 text-white py-20 px-6 text-center">
-        <h2 className="text-3xl font-bold mb-4">Ready to Build Your Stack?</h2>
-        <p className="text-lg mb-6">StratBot gives you execution leverage with strategic AI that works like you do.</p>
-        <a href="/contact" className="bg-white text-blue-600 px-6 py-3 rounded-xl font-semibold hover:bg-gray-100 transition">Book a Strategy Call</a>
-      </section>
-
-    </div>
+      {/* simple card styles */}
+      <style jsx>{`
+        .card {
+          background: #ffffff;
+          border-radius: 0.75rem;
+          box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+          padding: 2rem 1.5rem; text-align:center;
+          transition: transform .15s;
+        }
+        .card:hover { transform: translateY(-4px); }
+        .card-icon { width:40px;height:40px;color:#1e3a8a;margin:0 auto 1rem; }
+        .card-title { font-size:1.25rem;font-weight:700;margin-bottom:.75rem; }
+        .card-copy { font-size:.95rem;line-height:1.5;margin-bottom:1.25rem; }
+        .card-cta {
+          background:#f97316;color:#fff;padding:.5rem 1.25rem;
+          border-radius:9999px;font-weight:600;transition:opacity .15s;
+        }
+        .card-cta:hover { opacity:.9; }
+      `}</style>
+    </section>
   );
 }
