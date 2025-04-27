@@ -1,34 +1,79 @@
-import React from 'react';
+import Layout from "../../components/Layout"
+import Link from "next/link"
 
-export default function Scale() {
+export default function ScaleStack() {
   return (
-    <div className="bg-white text-gray-900 py-12 px-6 max-w-5xl mx-auto">
-      <h1 className="text-4xl font-extrabold text-blue-700 mb-6">Scale Stack</h1>
-      <p className="text-lg text-gray-700 mb-10">
-        The Scale Stack transforms your entire organization into an AI-native execution engine. It’s not just tools—it’s embedded intelligence across teams, workflows, and decisions. We build the system and lead the change.
-      </p>
+    <Layout>
+      <div className="max-w-4xl mx-auto px-6 py-12">
+        <Link href="/services" className="flex items-center text-blue-600 mb-8 hover:text-blue-800 transition-colors">
+          <svg className="h-5 w-5 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M10 19l-7-7m0 0l7-7m-7 7h18" />
+          </svg>
+          Back to All Stacks
+        </Link>
 
-      <div className="bg-gray-100 rounded-2xl p-6 shadow-xl">
-        <h2 className="text-xl font-bold text-gray-800 mb-4">System Overview: Embedded AI Across the Org</h2>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 text-sm text-gray-700">
-          <div className="bg-white p-4 rounded-xl shadow">
-            <h3 className="font-semibold text-blue-700 mb-2">Sales Team GPT</h3>
-            <p>Summarizes call notes, drafts follow-ups, flags pipeline risks. Operates inside CRM and Slack.</p>
+        <h1 className="text-4xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-indigo-700">
+          Scale Stack
+        </h1>
+
+        <div className="bg-white p-8 rounded-2xl shadow-lg border-t-4 border-blue-500 mb-12">
+          <p className="text-xl text-gray-700 mb-6">
+            The Scale Stack is designed for established businesses ready to accelerate growth and expand their impact.
+            We help you build the foundation for sustainable scaling.
+          </p>
+
+          <h2 className="text-2xl font-bold mb-4 text-blue-700">What's Included:</h2>
+
+          <div className="space-y-6 mb-8">
+            <div className="bg-blue-50 p-6 rounded-xl">
+              <h3 className="text-xl font-semibold mb-2 text-blue-800">Growth Strategy Development</h3>
+              <p className="text-gray-700">
+                A comprehensive growth plan that identifies key leverage points and opportunities for expansion in your
+                business.
+              </p>
+            </div>
+
+            <div className="bg-blue-50 p-6 rounded-xl">
+              <h3 className="text-xl font-semibold mb-2 text-blue-800">Scalable Process Implementation</h3>
+              <p className="text-gray-700">
+                Design and implementation of processes that can handle increased volume without sacrificing quality or
+                requiring proportional team growth.
+              </p>
+            </div>
+
+            <div className="bg-blue-50 p-6 rounded-xl">
+              <h3 className="text-xl font-semibold mb-2 text-blue-800">Performance Optimization</h3>
+              <p className="text-gray-700">
+                Systems to measure, track, and continuously improve key performance indicators across your business.
+              </p>
+            </div>
           </div>
-          <div className="bg-white p-4 rounded-xl shadow">
-            <h3 className="font-semibold text-blue-700 mb-2">Ops & Support GPT</h3>
-            <p>Auto-updates SOPs from decisions. Flags common issues. Feeds exec summaries weekly.</p>
-          </div>
-          <div className="bg-white p-4 rounded-xl shadow">
-            <h3 className="font-semibold text-blue-700 mb-2">Executive GPT</h3>
-            <p>Summarizes key metrics, decisions, risks. Preps strategy docs. Reduces meeting dependency.</p>
+
+          <h2 className="text-2xl font-bold mb-4 text-blue-700">Who It's For:</h2>
+          <ul className="list-disc pl-6 mb-8 space-y-2 text-gray-700">
+            <li>Established businesses ready for their next growth phase</li>
+            <li>Leaders looking to increase capacity without proportional cost increases</li>
+            <li>Teams that need to maintain quality while handling more volume</li>
+            <li>Businesses preparing for market expansion or new offerings</li>
+          </ul>
+
+          <div className="bg-gradient-to-r from-blue-600 to-indigo-700 p-6 rounded-xl text-white">
+            <h3 className="text-xl font-bold mb-2">Ready to scale?</h3>
+            <p className="mb-4">
+              Schedule a free 30-minute consultation to discuss how the Scale Stack can help you grow your business
+              sustainably.
+            </p>
+            <a
+              href="https://calendly.com/paulmaggio56"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block bg-white text-blue-700 px-6 py-3 rounded-lg font-medium hover:bg-gray-100 transition shadow-md"
+            >
+              Book Your Consultation
+            </a>
           </div>
         </div>
       </div>
-
-      <div className="mt-12 text-center">
-        <a href="/services" className="text-blue-600 font-semibold hover:underline">← Back to Execution Stacks</a>
-      </div>
-    </div>
-  );
+    </Layout>
+  )
 }

@@ -1,81 +1,149 @@
-export default function DecisionVelocityBlog() {
+import Layout from "../../components/Layout"
+import Link from "next/link"
+
+export default function DecisionVelocityPost() {
   return (
-    <main className="max-w-3xl mx-auto px-6 py-12 space-y-8">
-      <h1 className="text-4xl font-bold text-center">From Information Paralysis to Decision Velocity: How AI Transformed My Leadership</h1>
+    <Layout>
+      <div className="max-w-3xl mx-auto px-6 py-12">
+        <Link href="/blog" className="flex items-center text-blue-600 mb-8 hover:text-blue-800 transition-colors">
+          <svg className="h-5 w-5 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M10 19l-7-7m0 0l7-7m-7 7h18" />
+          </svg>
+          Back to All Posts
+        </Link>
 
-      <p className="text-gray-700 text-lg">
-        The data told the story: I was processing 187 emails, 63 Slack messages, and 3.2 hours of meetings daily—yet making only 2–3 meaningful strategic decisions per week. My decision backlog had grown to 14 critical items, some waiting 27+ days for resolution.
-      </p>
+        <article>
+          <header className="mb-8">
+            <h1 className="text-4xl font-bold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-indigo-700">
+              Decision Velocity: The Hidden Advantage of High-Agency Leaders
+            </h1>
+            <div className="flex items-center text-gray-600 text-sm">
+              <span>April 26, 2023</span>
+              <span className="mx-2">•</span>
+              <span>8 min read</span>
+            </div>
+          </header>
 
-      <p className="text-gray-700 text-lg">
-        Information wasn’t the bottleneck. Judgment was.
-      </p>
+          <div className="prose prose-lg max-w-none">
+            <p className="lead text-xl text-gray-700 mb-6">
+              In today's fast-paced business environment, the speed at which leaders make decisions often determines
+              their competitive advantage. This concept, known as decision velocity, is increasingly becoming the
+              differentiator between high-growth companies and those that stagnate.
+            </p>
 
-      <p className="text-gray-700 text-lg">
-        As a CEO and executive leader, it was sometimes tough to find someone to talk to—someone I could consult with who wasn’t working for me and just telling me what I wanted to hear… or another outsider who didn’t have a vested interest in my business. My Strategic Advisor GPT fills that role.
-      </p>
+            <h2>What is Decision Velocity?</h2>
+            <p>
+              Decision velocity refers to the speed and quality of decision-making within an organization. It's not just
+              about making quick decisions, but making the right decisions quickly enough to capitalize on opportunities
+              before they disappear.
+            </p>
 
-      <h2 className="text-2xl font-semibold pt-4">The Transformation</h2>
+            <p>
+              High-agency leaders understand that decision velocity is a competitive advantage. They build systems and
+              frameworks that allow them to:
+            </p>
 
-      <p className="text-gray-700 text-lg">
-        After implementing my Strategic AI Advisor, my metrics shifted dramatically:
-      </p>
-      <ul className="list-disc list-inside space-y-2 text-gray-700">
-        <li>Decision time reduced from 47 hours to 6 hours on average</li>
-        <li>Weekly high-impact decisions increased from 3 to 11</li>
-        <li>Decision confidence score improved from 61% to 89%</li>
-      </ul>
+            <ul>
+              <li>Quickly gather and analyze relevant information</li>
+              <li>Evaluate options against clear criteria</li>
+              <li>Make decisions with confidence, even with incomplete information</li>
+              <li>Execute rapidly on those decisions</li>
+              <li>Learn and adjust based on outcomes</li>
+            </ul>
 
-      <h2 className="text-2xl font-semibold pt-4">The System That Changed Everything</h2>
+            <h2>The Cost of Decision Delay</h2>
+            <p>
+              Every delayed decision has a cost. Sometimes that cost is obvious—a missed market opportunity or a
+              competitor gaining ground. But often, the costs are hidden:
+            </p>
 
-      <p className="text-gray-700 text-lg">
-        I didn’t create another chatbot—I built a decision engine that filters information through my strategic frameworks.
-        It wasn’t about outsourcing my brain—it was about offloading the noise, so I could focus on signal.
-      </p>
+            <ul>
+              <li>Team momentum stalls as they wait for direction</li>
+              <li>Resources remain allocated to underperforming initiatives</li>
+              <li>Mental bandwidth is consumed by unresolved questions</li>
+              <li>Organizational energy dissipates through analysis paralysis</li>
+            </ul>
 
-      <div className="bg-gray-50 border-l-4 border-blue-600 p-4 my-6">
-        <h3 className="font-semibold text-gray-800 mb-2">STRATEGIC DECISION FILTER:</h3>
-        <ul className="list-disc list-inside space-y-2 text-gray-700">
-          <li>1. Impact Rating: Potential value creation in next 90 days? [1–10]</li>
-          <li>2. Strategic Alignment: Connection to top 3 quarterly objectives? [Strong/Moderate/Weak]</li>
-          <li>3. Resource Requirement: Can we execute with current capacity? [Y/N]</li>
-          <li>4. Opportunity Cost: What must we decline to pursue this? [List]</li>
-          <li>5. Reversibility: How easily can we course-correct if wrong? [High/Medium/Low]</li>
-        </ul>
+            <h2>Building Your Decision Velocity System</h2>
+            <p>
+              The good news is that decision velocity can be systematized. Here are key components of a high-functioning
+              decision system:
+            </p>
+
+            <h3>1. Clear Decision Criteria</h3>
+            <p>
+              Establish clear criteria for different types of decisions before you need to make them. This creates
+              guardrails that make the decision process more efficient.
+            </p>
+
+            <h3>2. Decision Thresholds</h3>
+            <p>
+              Not all decisions deserve the same level of analysis. Create thresholds that determine how much time and
+              resources to allocate to different decisions based on their impact and reversibility.
+            </p>
+
+            <h3>3. Information Flows</h3>
+            <p>
+              Design systems that ensure you have the right information at the right time. This might include
+              dashboards, regular reports, or AI tools that surface relevant insights.
+            </p>
+
+            <h3>4. Decision Journals</h3>
+            <p>
+              Track your decisions, the context in which they were made, and their outcomes. This creates a feedback
+              loop that improves future decision quality.
+            </p>
+
+            <h2>AI as a Decision Velocity Multiplier</h2>
+            <p>Strategic AI tools can significantly enhance decision velocity by:</p>
+
+            <ul>
+              <li>Processing vast amounts of information quickly</li>
+              <li>Identifying patterns that humans might miss</li>
+              <li>Running scenario analyses to evaluate potential outcomes</li>
+              <li>Automating routine decisions to free up bandwidth for strategic thinking</li>
+            </ul>
+
+            <p>
+              By integrating AI into your decision framework, you can achieve both speed and quality—the holy grail of
+              decision velocity.
+            </p>
+
+            <h2>Conclusion</h2>
+            <p>
+              In a world where change is constant and opportunities are fleeting, decision velocity becomes a critical
+              competitive advantage. High-agency leaders don't just make fast decisions; they build systems that enable
+              consistently good decisions to be made quickly throughout their organizations.
+            </p>
+
+            <p>
+              The question isn't whether you can afford to increase your decision velocity—it's whether you can afford
+              not to.
+            </p>
+          </div>
+        </article>
+
+        <div className="mt-12 pt-8 border-t border-gray-200">
+          <h3 className="text-xl font-bold mb-4">Ready to increase your decision velocity?</h3>
+          <p className="mb-6">
+            Learn how our Strategic GPTs and Execution Stacks can help you build a high-performance decision system.
+          </p>
+          <div className="flex flex-col sm:flex-row gap-4">
+            <Link
+              href="/services"
+              className="inline-block bg-gradient-to-r from-blue-600 to-indigo-700 text-white px-6 py-3 rounded-lg font-medium hover:from-blue-700 hover:to-indigo-800 transition shadow-md text-center"
+            >
+              Explore Execution Stacks
+            </Link>
+            <Link
+              href="/contact"
+              className="inline-block border-2 border-blue-600 text-blue-700 px-6 py-3 rounded-lg font-medium hover:bg-blue-50 transition shadow-md text-center"
+            >
+              Contact Us
+            </Link>
+          </div>
+        </div>
       </div>
-
-      <h2 className="text-2xl font-semibold pt-4">Real Results</h2>
-
-      <p className="text-gray-700 text-lg">
-        Last month, we faced a critical partnership opportunity. Previously, this would have triggered 2+ weeks of research, 4–5 meetings, and endless Slack debates.
-      </p>
-      <p className="text-gray-700 text-lg">
-        Instead, I ran it through my AI Advisor with our historical data and strategic parameters. Within 3 hours, we had a structured analysis that revealed the partnership would consume 35% of our technical resources while advancing only our tertiary objective.
-      </p>
-      <p className="text-gray-700 text-lg">
-        Result: We declined the partnership and redirected those resources to our core product development, which generated $42K in new revenue within 30 days.
-      </p>
-
-      <h2 className="text-2xl font-semibold pt-4">The Metrics That Matter</h2>
-      <ul className="list-disc list-inside space-y-2 text-gray-700">
-        <li>Decision Velocity: 47 hours → 6 hours (87% improvement)</li>
-        <li>Decision Backlog: 14 items → 3 items (79% reduction)</li>
-        <li>Weekly Strategic Decisions: 3 → 11 (267% increase)</li>
-        <li>Execution Confidence: 61% → 89% (46% improvement)</li>
-      </ul>
-
-      <h2 className="text-2xl font-semibold pt-4">The Compound Effect</h2>
-      <p className="text-gray-700 text-lg">
-        The real power isn’t in any single decision—it’s in the compounding effect of consistently making aligned choices at speed.
-        My team now moves with a clarity and confidence that wasn’t possible before.
-      </p>
-      <p className="text-gray-700 text-lg">
-        Information without judgment is just noise. My AI Advisor doesn’t just give me more data—it gives me filtered insights aligned with what matters most.
-      </p>
-
-      <p className="text-sm text-gray-500 italic pt-2">
-        P.S. Within 14 days, I’ll share a detailed case study of how we used this system to make a six-figure product decision in under 24 hours.
-      </p>
-    </main>
-  );
+    </Layout>
+  )
 }

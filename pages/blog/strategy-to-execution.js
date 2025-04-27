@@ -1,74 +1,61 @@
-export default function StrategyToExecutionBlog() {
+import Layout from "../../components/Layout"
+import Link from "next/link"
+
+export default function BlogPostTemplate() {
   return (
-    <main className="max-w-3xl mx-auto px-6 py-12 space-y-8">
-      <h1 className="text-4xl font-bold text-center">From Strategic Drift to Consistent Revenue: How I Closed the Execution Gap</h1>
+    <Layout>
+      <div className="max-w-3xl mx-auto px-6 py-12">
+        <Link href="/blog" className="flex items-center text-blue-600 mb-8 hover:text-blue-800 transition-colors">
+          <svg className="h-5 w-5 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M10 19l-7-7m0 0l7-7m-7 7h18" />
+          </svg>
+          Back to All Posts
+        </Link>
 
-      <p className="text-gray-700 text-lg">
-        I was hemorrhaging $4,200 monthly on misaligned initiatives while my calendar showed the brutal truth: 72% reactive work, leaving just 5.5 hours weekly for true revenue-generating activities.
-      </p>
+        <article>
+          <header className="mb-8">
+            <h1 className="text-4xl font-bold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-indigo-700">
+              Blog Post Title
+            </h1>
+            <div className="flex items-center text-gray-600 text-sm">
+              <span>Month Day, Year</span>
+              <span className="mx-2">•</span>
+              <span>X min read</span>
+            </div>
+          </header>
 
-      <p className="text-gray-700 text-lg">
-        Strategy existed in documents. Execution happened elsewhere.
-      </p>
+          <div className="prose prose-lg max-w-none">
+            {/* Blog post content goes here */}
+            <p className="lead text-xl text-gray-700 mb-6">
+              This is the lead paragraph that introduces the blog post topic.
+            </p>
 
-      <h2 className="text-2xl font-semibold pt-4">The Transformation</h2>
+            <h2>First Section Heading</h2>
+            <p>Content for the first section goes here.</p>
 
-      <p className="text-gray-700 text-lg">
-        After implementing my Strategic Advisor system, I've identified two new revenue streams worth $12K/month and eliminated 9 hours of low-leverage work weekly. My strategic-to-tactical alignment score (something I now measure) jumped from 31% to 78%.
-      </p>
+            {/* Add more sections as needed */}
+          </div>
+        </article>
 
-      <h2 className="text-2xl font-semibold pt-4">The System That Changed Everything</h2>
-
-      <p className="text-gray-700 text-lg">
-        I didn’t just create another productivity tool—I built a decision framework that forces strategic alignment into every daily choice.
-      </p>
-
-      <p className="text-gray-700 text-lg">
-        Here's the actual daily decision matrix I use:
-      </p>
-
-      <div className="bg-gray-50 border-l-4 border-blue-600 p-4 my-6">
-        <h3 className="font-semibold text-gray-800 mb-2">MORNING STRATEGIC FILTER:</h3>
-        <ul className="list-disc list-inside space-y-2 text-gray-700">
-          <li>1. Does this activity directly support my primary revenue goal? [Y/N]</li>
-          <li>2. Will this leverage my core expertise and differentiation? [Y/N]</li>
-          <li>3. Is this the highest-impact use of my next 90-minute focus block? [Y/N]</li>
-          <li>4. If I complete only this today, will I still move forward? [Y/N]</li>
-        </ul>
+        <div className="mt-12 pt-8 border-t border-gray-200">
+          <h3 className="text-xl font-bold mb-4">Call to action heading</h3>
+          <p className="mb-6">Brief description encouraging the reader to take the next step.</p>
+          <div className="flex flex-col sm:flex-row gap-4">
+            <Link
+              href="/services"
+              className="inline-block bg-gradient-to-r from-blue-600 to-indigo-700 text-white px-6 py-3 rounded-lg font-medium hover:from-blue-700 hover:to-indigo-800 transition shadow-md text-center"
+            >
+              Primary CTA
+            </Link>
+            <Link
+              href="/contact"
+              className="inline-block border-2 border-blue-600 text-blue-700 px-6 py-3 rounded-lg font-medium hover:bg-blue-50 transition shadow-md text-center"
+            >
+              Secondary CTA
+            </Link>
+          </div>
+        </div>
       </div>
-
-      <h2 className="text-2xl font-semibold pt-4">Real Results</h2>
-
-      <p className="text-gray-700 text-lg">
-        Last month, my system flagged that I was spending 6.5 hours weekly on client processes that could be templated. By creating a standardized framework, I redirected that time to developing new service offerings.
-      </p>
-
-      <p className="text-gray-700 text-lg">
-        Result: Two new clients at $6K/month each within 3 weeks.
-      </p>
-
-      <h2 className="text-2xl font-semibold pt-4">The Metrics That Matter</h2>
-
-      <ul className="list-disc list-inside space-y-2 text-gray-700">
-        <li>Strategic Alignment Score: 31% → 78%</li>
-        <li>Weekly High-Leverage Hours: 5.5 → 14.3</li>
-        <li>Monthly Revenue from New Streams: $0 → $15,000</li>
-        <li>Decision Velocity: 72 hours → 24 hours</li>
-      </ul>
-
-      <h2 className="text-2xl font-semibold pt-4">The Compound Effect</h2>
-
-      <p className="text-gray-700 text-lg">
-        Every interaction with my system reinforces the neural pathways between strategic intent and daily execution. The gap between what I plan and what I do shrinks weekly.
-      </p>
-
-      <p className="text-gray-700 text-lg">
-        Strategy isn't an annual retreat. It's a daily practice.
-      </p>
-
-      <p className="text-blue-600 font-semibold pt-4">
-        → Want your Strategic GPT to close that gap for you? <a href="/contact" className="underline">Let’s talk.</a>
-      </p>
-    </main>
-  );
+    </Layout>
+  )
 }

@@ -1,39 +1,78 @@
-import React from 'react';
-import Link from 'next/link';
+import Layout from "../../components/Layout"
+import Link from "next/link"
 
-export default function Command() {
+export default function CommandStack() {
   return (
-    <div className="bg-white text-gray-900 py-12 px-6 max-w-5xl mx-auto">
-      <h1 className="text-4xl font-extrabold text-blue-700 mb-6">Command Stack</h1>
-      <p className="text-lg text-gray-700 mb-10">
-        The Command Stack gives you execution leverage. It installs AI-powered workflows that remove you as the bottleneck—automating delegation, tracking progress, and surfacing only what needs your attention.
-      </p>
+    <Layout>
+      <div className="max-w-4xl mx-auto px-6 py-12">
+        <Link href="/services" className="flex items-center text-blue-600 mb-8 hover:text-blue-800 transition-colors">
+          <svg className="h-5 w-5 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M10 19l-7-7m0 0l7-7m-7 7h18" />
+          </svg>
+          Back to All Stacks
+        </Link>
 
-      <div className="bg-gray-100 rounded-2xl p-6 shadow-xl">
-        <h2 className="text-xl font-bold text-gray-800 mb-4">Workflow: Strategic Initiative → Execution</h2>
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-6 text-sm text-gray-700">
-          <div className="bg-white p-4 rounded-xl shadow">
-            <h3 className="font-semibold text-blue-700 mb-2">1. Executive Input</h3>
-            <p>"Launch the new onboarding experience by end of quarter."</p>
+        <h1 className="text-4xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-indigo-700">
+          Command Stack
+        </h1>
+
+        <div className="bg-white p-8 rounded-2xl shadow-lg border-t-4 border-blue-500 mb-12">
+          <p className="text-xl text-gray-700 mb-6">
+            The Command Stack is designed for businesses ready to take control of their operations and streamline
+            execution. We help you implement systems that drive consistent results.
+          </p>
+
+          <h2 className="text-2xl font-bold mb-4 text-blue-700">What's Included:</h2>
+
+          <div className="space-y-6 mb-8">
+            <div className="bg-blue-50 p-6 rounded-xl">
+              <h3 className="text-xl font-semibold mb-2 text-blue-800">Operational Systems Design</h3>
+              <p className="text-gray-700">
+                Custom-built operational systems that create predictability and consistency in your business processes.
+              </p>
+            </div>
+
+            <div className="bg-blue-50 p-6 rounded-xl">
+              <h3 className="text-xl font-semibold mb-2 text-blue-800">Workflow Optimization</h3>
+              <p className="text-gray-700">
+                Streamline your team's workflows to eliminate bottlenecks, reduce friction, and increase output quality.
+              </p>
+            </div>
+
+            <div className="bg-blue-50 p-6 rounded-xl">
+              <h3 className="text-xl font-semibold mb-2 text-blue-800">Team Alignment Strategies</h3>
+              <p className="text-gray-700">
+                Frameworks and tools to ensure everyone on your team is moving in the same direction with clear
+                accountability.
+              </p>
+            </div>
           </div>
-          <div className="bg-white p-4 rounded-xl shadow">
-            <h3 className="font-semibold text-blue-700 mb-2">2. GPT Breakdown</h3>
-            <p>AI breaks initiative into steps, deadlines, and assigns owners via Slack/Notion.</p>
-          </div>
-          <div className="bg-white p-4 rounded-xl shadow">
-            <h3 className="font-semibold text-blue-700 mb-2">3. Progress Checks</h3>
-            <p>Agent runs async check-ins every 3 days. Gathers blockers, updates dashboards.</p>
-          </div>
-          <div className="bg-white p-4 rounded-xl shadow">
-            <h3 className="font-semibold text-blue-700 mb-2">4. Escalation Logic</h3>
-            <p>Only notifies you if something's off track—otherwise, runs autonomously.</p>
+
+          <h2 className="text-2xl font-bold mb-4 text-blue-700">Who It's For:</h2>
+          <ul className="list-disc pl-6 mb-8 space-y-2 text-gray-700">
+            <li>Growing businesses experiencing operational friction</li>
+            <li>Leaders looking to reduce their day-to-day involvement in operations</li>
+            <li>Teams that need better coordination and communication</li>
+            <li>Businesses preparing for their next growth phase</li>
+          </ul>
+
+          <div className="bg-gradient-to-r from-blue-600 to-indigo-700 p-6 rounded-xl text-white">
+            <h3 className="text-xl font-bold mb-2">Ready to take command?</h3>
+            <p className="mb-4">
+              Schedule a free 30-minute consultation to discuss how the Command Stack can help you streamline your
+              operations.
+            </p>
+            <a
+              href="https://calendly.com/paulmaggio56"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block bg-white text-blue-700 px-6 py-3 rounded-lg font-medium hover:bg-gray-100 transition shadow-md"
+            >
+              Book Your Consultation
+            </a>
           </div>
         </div>
       </div>
-
-      <div className="mt-12 text-center">
-        <Link href="/services" className="text-blue-600 font-semibold hover:underline">← Back to Execution Stacks</Link>
-      </div>
-    </div>
-  );
+    </Layout>
+  )
 }

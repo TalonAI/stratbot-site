@@ -1,44 +1,80 @@
-import React from 'react';
-import Link from 'next/link';
+import Layout from "../../components/Layout"
+import Link from "next/link"
 
-export default function Clarity() {
+export default function ClarityStack() {
   return (
-    <div className="bg-white text-gray-900 py-12 px-6 max-w-5xl mx-auto">
-      <h1 className="text-4xl font-extrabold text-blue-700 mb-6">Clarity Stack</h1>
-      <p className="text-lg text-gray-700 mb-10">
-        The Clarity Stack gives you your own AI Strategic Advisor—an always-on, judgment-focused thinking partner trained on your voice, decisions, and style. It's not just about automating answers—it's about enhancing your decision-making with frictionless insight.
-      </p>
+    <Layout>
+      <div className="max-w-4xl mx-auto px-6 py-12">
+        <Link href="/services" className="flex items-center text-blue-600 mb-8 hover:text-blue-800 transition-colors">
+          <svg className="h-5 w-5 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M10 19l-7-7m0 0l7-7m-7 7h18" />
+          </svg>
+          Back to All Stacks
+        </Link>
 
-      <div className="bg-gray-100 rounded-2xl p-6 shadow-xl space-y-6">
-        <div className="flex items-start">
-          <div className="bg-blue-600 text-white rounded-full h-10 w-10 flex items-center justify-center font-bold mr-4">F</div>
-          <div>
-            <p className="text-gray-800 font-semibold">Founder</p>
-            <p className="text-gray-700 mt-1">
-              We keep missing our product deadlines. Feels like everything takes longer than it should. What am I not seeing?
-            </p>
+        <h1 className="text-4xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-indigo-700">
+          Clarity Stack
+        </h1>
+
+        <div className="bg-white p-8 rounded-2xl shadow-lg border-t-4 border-blue-500 mb-12">
+          <p className="text-xl text-gray-700 mb-6">
+            The Clarity Stack is designed for founders and leaders who feel stuck in decision paralysis or overwhelmed
+            by competing priorities. We help you cut through the noise and create a clear path forward.
+          </p>
+
+          <h2 className="text-2xl font-bold mb-4 text-blue-700">What's Included:</h2>
+
+          <div className="space-y-6 mb-8">
+            <div className="bg-blue-50 p-6 rounded-xl">
+              <h3 className="text-xl font-semibold mb-2 text-blue-800">Strategic Decision Framework</h3>
+              <p className="text-gray-700">
+                A customized framework that aligns with your values and business goals, making complex decisions simpler
+                and more consistent.
+              </p>
+            </div>
+
+            <div className="bg-blue-50 p-6 rounded-xl">
+              <h3 className="text-xl font-semibold mb-2 text-blue-800">Priority Mapping</h3>
+              <p className="text-gray-700">
+                Identify what truly matters for your business right now and create a visual map of priorities that keeps
+                you focused on high-impact activities.
+              </p>
+            </div>
+
+            <div className="bg-blue-50 p-6 rounded-xl">
+              <h3 className="text-xl font-semibold mb-2 text-blue-800">Action Plan Development</h3>
+              <p className="text-gray-700">
+                Transform insights into concrete steps with clear ownership, timelines, and success metrics to ensure
+                momentum.
+              </p>
+            </div>
           </div>
-        </div>
 
-        <div className="flex items-start">
-          <div className="bg-gray-700 text-white rounded-full h-10 w-10 flex items-center justify-center font-bold mr-4">S</div>
-          <div>
-            <p className="text-gray-800 font-semibold">StratBot Advisor</p>
-            <p className="text-gray-700 mt-1">
-              You're treating delays like a planning problem. But based on your past two post-mortems, it’s a <span className="font-semibold">decision bottleneck issue</span>—not tasks, but waiting on you to approve specs and unblock teams.
-              <br /><br />
-              <span className="font-semibold">Recommend:</span><br />
-              • Delegate spec approval to your product lead with a simple escalation rule.<br />
-              • Set a weekly async review rhythm to prevent mid-week stalls.<br /><br />
-              This isn’t about better planning. It’s about removing yourself from the critical path.
+          <h2 className="text-2xl font-bold mb-4 text-blue-700">Who It's For:</h2>
+          <ul className="list-disc pl-6 mb-8 space-y-2 text-gray-700">
+            <li>Founders facing critical strategic decisions</li>
+            <li>Leaders overwhelmed by competing priorities</li>
+            <li>Teams that need alignment on direction and goals</li>
+            <li>Businesses at an inflection point or transition</li>
+          </ul>
+
+          <div className="bg-gradient-to-r from-blue-600 to-indigo-700 p-6 rounded-xl text-white">
+            <h3 className="text-xl font-bold mb-2">Ready to gain clarity?</h3>
+            <p className="mb-4">
+              Schedule a free 30-minute consultation to discuss how the Clarity Stack can help you move forward with
+              confidence.
             </p>
+            <a
+              href="https://calendly.com/paulmaggio56"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block bg-white text-blue-700 px-6 py-3 rounded-lg font-medium hover:bg-gray-100 transition shadow-md"
+            >
+              Book Your Consultation
+            </a>
           </div>
         </div>
       </div>
-
-      <div className="mt-12 text-center">
-        <Link href="/services" className="text-blue-600 font-semibold hover:underline">← Back to Execution Stacks</Link>
-      </div>
-    </div>
-  );
+    </Layout>
+  )
 }
