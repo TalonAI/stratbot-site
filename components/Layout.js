@@ -26,11 +26,11 @@ export default function Layout({ children }) {
             </li>
             <li className="px-6">
               <Link
-                href="/training"
+                href="/services/scale"
                 className="flex items-center text-gray-700 hover:text-blue-600 transition-all duration-200"
               >
                 <BookOpen className="w-4 h-4 mr-2 text-blue-500" />
-                6-Week Training Class&nbsp;&nbsp;&nbsp;
+                AI Team Training&nbsp;&nbsp;&nbsp;
               </Link>
             </li>
             <li className="px-6">

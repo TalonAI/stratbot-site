@@ -1,6 +1,19 @@
+// pages/services.js
 import Layout from "../components/Layout"
+import Link from "next/link"
 
 export default function Services() {
+  const checkSvg = (
+    <svg
+      className="h-5 w-5 text-blue-500 mr-2 mt-1"
+      fill="none"
+      viewBox="0 0 24 24"
+      stroke="currentColor"
+    >
+      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
+    </svg>
+  )
+
   return (
     <Layout>
       <div className="max-w-5xl mx-auto px-6 py-12">
@@ -22,66 +35,46 @@ export default function Services() {
               decision paralysis.
             </p>
             <ul className="space-y-2 mb-8">
-              <li className="flex items-start">
-                <svg className="h-5 w-5 text-blue-500 mr-2 mt-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
-                </svg>
-                <span>Strategic decision framework</span>
-              </li>
-              <li className="flex items-start">
-                <svg className="h-5 w-5 text-blue-500 mr-2 mt-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
-                </svg>
-                <span>Priority mapping</span>
-              </li>
-              <li className="flex items-start">
-                <svg className="h-5 w-5 text-blue-500 mr-2 mt-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
-                </svg>
-                <span>Action plan development</span>
-              </li>
+              {[
+                "Strategic decision framework",
+                "Priority mapping",
+                "Mission-to-metric alignment",
+              ].map((item) => (
+                <li key={item} className="flex items-start">
+                  {checkSvg}
+                  <span>{item}</span>
+                </li>
+              ))}
             </ul>
-            <a
+            <Link
               href="/services/clarity"
-              className="inline-block bg-gradient-to-r from-blue-600 to-indigo-700 text-white px-6 py-3 rounded-lg font-medium hover:from-blue-700 hover:to-indigo-800 transition shadow-md"
+              className="inline-block bg-gradient-to-r from-blue-600 to-indigo-700 text-white font-medium px-6 py-3 rounded-lg hover:opacity-90 transition"
             >
-              Learn More
-            </a>
+              Explore Clarity Stack →
+            </Link>
           </div>
 
           {/* Command Stack */}
           <div className="bg-white p-8 rounded-2xl shadow-lg border-t-4 border-blue-500 hover:shadow-xl transition transform hover:-translate-y-1">
             <h2 className="text-2xl font-bold mb-4 text-blue-700">Command Stack</h2>
             <p className="text-gray-700 mb-6">
-              Take control of your operations and streamline execution. Ideal for businesses ready to implement systems
-              that drive results.
+              Stand up core SOPs, negotiation aids, and live dashboards with your leadership team—so you can stop firefighting
+              and start commanding your operations.
             </p>
             <ul className="space-y-2 mb-8">
-              <li className="flex items-start">
-                <svg className="h-5 w-5 text-blue-500 mr-2 mt-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
-                </svg>
-                <span>Operational systems design</span>
-              </li>
-              <li className="flex items-start">
-                <svg className="h-5 w-5 text-blue-500 mr-2 mt-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
-                </svg>
-                <span>Workflow optimization</span>
-              </li>
-              <li className="flex items-start">
-                <svg className="h-5 w-5 text-blue-500 mr-2 mt-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
-                </svg>
-                <span>Team alignment strategies</span>
-              </li>
+              {["SOP Builder kit", "Negotiation Assistant GPT", "Live KPI Dashboard"].map((item) => (
+                <li key={item} className="flex items-start">
+                  {checkSvg}
+                  <span>{item}</span>
+                </li>
+              ))}
             </ul>
-            <a
+            <Link
               href="/services/command"
-              className="inline-block bg-gradient-to-r from-blue-600 to-indigo-700 text-white px-6 py-3 rounded-lg font-medium hover:from-blue-700 hover:to-indigo-800 transition shadow-md"
+              className="inline-block bg-gradient-to-r from-blue-600 to-indigo-700 text-white font-medium px-6 py-3 rounded-lg hover:opacity-90 transition"
             >
-              Learn More
-            </a>
+              Explore Command Stack →
+            </Link>
           </div>
 
           {/* Scale Stack */}
@@ -89,47 +82,27 @@ export default function Services() {
             <h2 className="text-2xl font-bold mb-4 text-blue-700">Scale Stack</h2>
             <p className="text-gray-700 mb-6">
               Accelerate growth and expand your impact. Perfect for established businesses ready to reach the next
-              level.
+              level through our 6-week AI Operational Leadership training program.
             </p>
             <ul className="space-y-2 mb-8">
-              <li className="flex items-start">
-                <svg className="h-5 w-5 text-blue-500 mr-2 mt-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
-                </svg>
-                <span>Growth strategy development</span>
-              </li>
-              <li className="flex items-start">
-                <svg className="h-5 w-5 text-blue-500 mr-2 mt-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
-                </svg>
-                <span>Scalable process implementation</span>
-              </li>
-              <li className="flex items-start">
-                <svg className="h-5 w-5 text-blue-500 mr-2 mt-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
-                </svg>
-                <span>Performance optimization</span>
-              </li>
+              {[
+                "Growth strategy development",
+                "Scalable process implementation",
+                "Team-wide AI training program (6 weeks)",
+              ].map((item) => (
+                <li key={item} className="flex items-start">
+                  {checkSvg}
+                  <span>{item}</span>
+                </li>
+              ))}
             </ul>
-            <a
+            <Link
               href="/services/scale"
-              className="inline-block bg-gradient-to-r from-blue-600 to-indigo-700 text-white px-6 py-3 rounded-lg font-medium hover:from-blue-700 hover:to-indigo-800 transition shadow-md"
+              className="inline-block bg-gradient-to-r from-blue-600 to-indigo-700 text-white font-medium px-6 py-3 rounded-lg hover:opacity-90 transition"
             >
-              Learn More
-            </a>
+              Explore Scale Stack →
+            </Link>
           </div>
-        </div>
-
-        <div className="mt-16 text-center">
-          <h3 className="text-2xl font-bold mb-6 text-gray-800">Not sure which stack is right for you?</h3>
-          <a
-            href="https://calendly.com/paulmaggio56"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-block bg-gradient-to-r from-blue-600 to-indigo-700 text-white px-8 py-4 rounded-xl text-lg font-medium hover:from-blue-700 hover:to-indigo-800 transition shadow-lg"
-          >
-            Schedule a Free Consultation
-          </a>
         </div>
       </div>
     </Layout>
