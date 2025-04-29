@@ -1,34 +1,58 @@
-import React from 'react';
+// pages/services/scale.js
+import Link from 'next/link';
+import { ChevronLeft, ChevronRight } from 'lucide-react';
 
-export default function Scale() {
+export default function ScaleStack() {
   return (
-    <div className="bg-white text-gray-900 py-12 px-6 max-w-5xl mx-auto">
-      <h1 className="text-4xl font-extrabold text-blue-700 mb-6">Scale Stack</h1>
-      <p className="text-lg text-gray-700 mb-10">
-        The Scale Stack transforms your entire organization into an AI-native execution engine. It’s not just tools—it’s embedded intelligence across teams, workflows, and decisions. We build the system and lead the change.
-      </p>
+    <>
+      <div className="max-w-4xl mx-auto px-6 py-12">
+        {/* Back link */}
+        <Link
+          href="/services"
+          className="flex items-center text-blue-600 mb-8 hover:text-blue-800"
+        >
+          <ChevronLeft className="w-5 h-5 mr-2" /> Back to All Stacks
+        </Link>
 
-      <div className="bg-gray-100 rounded-2xl p-6 shadow-xl">
-        <h2 className="text-xl font-bold text-gray-800 mb-4">System Overview: Embedded AI Across the Org</h2>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 text-sm text-gray-700">
-          <div className="bg-white p-4 rounded-xl shadow">
-            <h3 className="font-semibold text-blue-700 mb-2">Sales Team GPT</h3>
-            <p>Summarizes call notes, drafts follow-ups, flags pipeline risks. Operates inside CRM and Slack.</p>
+        {/* Header & overview */}
+        <h1 className="text-4xl font-bold mb-4">
+          Scale Stack — AI Team Training Program
+        </h1>
+        <p className="mb-8 text-lg text-gray-700">
+          Empower your entire team to leverage AI, establish operating rhythms,
+          and scale your business. This hands-on program is delivered as a
+          6-week live cohort class, designed to multiply staff impact and free
+          leadership to focus on strategy.
+        </p>
+
+        {/* Info cards */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mb-8">
+          <div className="p-6 bg-white rounded-md shadow">
+            <h3 className="font-semibold mb-2">Program Duration</h3>
+            <p>6 weeks / 1 hour live session per week + async content</p>
           </div>
-          <div className="bg-white p-4 rounded-xl shadow">
-            <h3 className="font-semibold text-blue-700 mb-2">Ops & Support GPT</h3>
-            <p>Auto-updates SOPs from decisions. Flags common issues. Feeds exec summaries weekly.</p>
+          <div className="p-6 bg-white rounded-md shadow">
+            <h3 className="font-semibold mb-2">Audience</h3>
+            <p>Cross-functional team members (ops, CS, sales, admin)</p>
           </div>
-          <div className="bg-white p-4 rounded-xl shadow">
-            <h3 className="font-semibold text-blue-700 mb-2">Executive GPT</h3>
-            <p>Summarizes key metrics, decisions, risks. Preps strategy docs. Reduces meeting dependency.</p>
+          <div className="p-6 bg-white rounded-md shadow">
+            <h3 className="font-semibold mb-2">Mode</h3>
+            <p>Live cohort sessions + curated Loom videos + AI companions</p>
+          </div>
+          <div className="p-6 bg-white rounded-md shadow">
+            <h3 className="font-semibold mb-2">Outcome</h3>
+            <p>SOP library, role-based AI workflows, weekly execution cadence</p>
           </div>
         </div>
-      </div>
 
-      <div className="mt-12 text-center">
-        <a href="/services" className="text-blue-600 font-semibold hover:underline">← Back to Execution Stacks</a>
+        {/* CTA to full syllabus */}
+        <Link
+          href="/services/scale-syllabus"
+          className="inline-flex items-center bg-blue-600 text-white font-medium px-6 py-3 rounded-lg hover:bg-blue-700 transition"
+        >
+          View Full 6-Week Syllabus <ChevronRight className="ml-2 w-5 h-5" />
+        </Link>
       </div>
-    </div>
+    </>
   );
 }
