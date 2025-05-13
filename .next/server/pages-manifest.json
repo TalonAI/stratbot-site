@@ -2,13 +2,7 @@
   "/_app": "pages/_app.js",
   "/_error": "pages/_error.js",
   "/_document": "pages/_document.js",
-  "/blog": "pages/blog.js",
-  "/blog/strategy-to-execution": "pages/blog/strategy-to-execution.js",
-  "/blog/strategic-thinking-system": "pages/blog/strategic-thinking-system.js",
-  "/blog/decision-velocity": "pages/blog/decision-velocity.js",
-  "/services": "pages/services.js",
-  "/services/scale": "pages/services/scale.js",
   "/services/scale-syllabus": "pages/services/scale-syllabus.js",
-  "/contact": "pages/contact.js",
-  "/": "pages/index.js"
+  "/": "pages/index.js",
+  "/contact": "pages/contact.js"
 }
