@@ -2,8 +2,24 @@ import Layout from "../components/Layout"
 import Link from "next/link"
 
 export default function Blog() {
-  // Sample blog posts - replace with your actual blog data
   const blogPosts = [
+    {
+      id: 4,
+      title: "How to Install a Strategic Thinking System (Without Saying ‘AI’ Once)",
+      excerpt:
+        "Most owners don’t need another app—they need a repeatable way to think clearly when everything feels urgent. Here’s how to build your own decision system—no tech jargon required.",
+      date: "May 13, 2025",
+      readTime: "7 min read",
+      slug: "strategic-thinking-system",
+    },
+    {
+      id: 2,
+      title: "Strategy to Execution: Installing Systems That Actually Scale",
+      excerpt: "From building clarity to deploying AI-powered leverage, this guide breaks down how high-agency leaders turn chaos into rhythm.",
+      date: "April 5, 2024",
+      readTime: "7 min read",
+      slug: "strategy-to-execution",
+    },
     {
       id: 1,
       title: "Decision Velocity: The Hidden Advantage of High-Agency Leaders",
@@ -12,22 +28,6 @@ export default function Blog() {
       date: "April 26, 2023",
       readTime: "8 min read",
       slug: "decision-velocity",
-    },
-    {
-      id: 2,
-      title: "Building Systems That Scale: The Execution Stack Approach",
-      excerpt: "Learn how the Execution Stack methodology creates clarity and consistency in your business operations.",
-      date: "March 22, 2023",
-      readTime: "7 min read",
-      slug: "execution-stack-approach",
-    },
-    {
-      id: 3,
-      title: "From Chaos to Clarity: How Strategic GPTs Transform Leadership",
-      excerpt: "Discover how leaders are using custom GPTs to cut through noise and focus on what truly matters.",
-      date: "February 10, 2023",
-      readTime: "6 min read",
-      slug: "strategic-gpts-leadership",
     },
   ]
 
