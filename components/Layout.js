@@ -1,63 +1,81 @@
-import Link from "next/link"
-import { Mail, Users, FileText, Calendar, Layers, BookOpen } from "lucide-react"
+import Link from "next/link";
+import Image from "next/image";
+import {
+  Mail,
+  Users,
+  FileText,
+  Calendar,
+  Layers,
+  BookOpen,
+} from "lucide-react";
 
 export default function Layout({ children }) {
   return (
     <div className="min-h-screen flex flex-col bg-gradient-to-br from-slate-50 to-blue-50 text-gray-800">
-      <nav className="bg-white shadow-md border-b-4 border-blue-500">
+      {/* Logo Header */}
+      <div className="flex justify-center py-4">
+        <Image
+          src="/mosaics-logo.png"
+          alt="MosAIcs Logo"
+          width={64}
+          height={64}
+        />
+      </div>
+
+      {/* Navigation Bar */}
+      <nav className="bg-white shadow-md border-b-4 border-mosaics-teal">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
-          <ul className="flex justify-center items-center">
+          <ul className="flex justify-center items-center flex-wrap">
             <li className="px-6">
-              <Link
-                href="/"
-                className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-indigo-700 font-bold text-xl hover:text-blue-800"
-              >
-                StratBot&nbsp;&nbsp;&nbsp;
+              <Link href="/" className="font-bold text-xl">
+                <span className="text-mosaics-purple">Mos</span>
+                <span className="text-mosaics-teal">AI</span>
+                <span className="text-mosaics-purple">cs</span>
               </Link>
             </li>
             <li className="px-6">
               <Link
                 href="/services"
-                className="flex items-center text-gray-700 hover:text-blue-600 transition-all duration-200"
+                className="flex items-center text-gray-700 hover:text-mosaics-dark transition-all duration-200"
               >
-                <Layers className="w-4 h-4 mr-2 text-blue-500" />
-                Execution Stacks&nbsp;&nbsp;&nbsp;
+                <Layers className="w-4 h-4 mr-2 text-mosaics-teal" />
+                Execution Stacks
               </Link>
             </li>
             <li className="px-6">
               <Link
                 href="/services/scale"
-                className="flex items-center text-gray-700 hover:text-blue-600 transition-all duration-200"
+                className="flex items-center text-gray-700 hover:text-mosaics-dark transition-all duration-200"
               >
-                <BookOpen className="w-4 h-4 mr-2 text-blue-500" />
-                AI Team Training&nbsp;&nbsp;&nbsp;
+                <BookOpen className="w-4 h-4 mr-2 text-mosaics-teal" />
+                AI Team Training
               </Link>
             </li>
             <li className="px-6">
               <Link
                 href="/contact"
-                className="flex items-center text-gray-700 hover:text-blue-600 transition-all duration-200"
+                className="flex items-center text-gray-700 hover:text-mosaics-dark transition-all duration-200"
               >
-                <Mail className="w-4 h-4 mr-2 text-blue-500" />
-                Contact&nbsp;&nbsp;&nbsp;
+                <Mail className="w-4 h-4 mr-2 text-mosaics-teal" />
+                Contact
               </Link>
             </li>
             <li className="px-6">
               <Link
                 href="/team"
-                className="flex items-center text-gray-700 hover:text-blue-600 transition-all duration-200"
+                className="flex items-center text-gray-700 hover:text-mosaics-dark transition-all duration-200"
               >
-                <Users className="w-4 h-4 mr-2 text-blue-500" />
-                Team&nbsp;&nbsp;&nbsp;
+                <Users className="w-4 h-4 mr-2 text-mosaics-teal" />
+                Team
               </Link>
             </li>
             <li className="px-6">
               <Link
                 href="/blog"
-                className="flex items-center text-gray-700 hover:text-blue-600 transition-all duration-200"
+                className="flex items-center text-gray-700 hover:text-mosaics-dark transition-all duration-200"
               >
-                <FileText className="w-4 h-4 mr-2 text-blue-500" />
-                Blog&nbsp;&nbsp;&nbsp;
+                <FileText className="w-4 h-4 mr-2 text-mosaics-teal" />
+                Blog
               </Link>
             </li>
             <li className="px-6">
@@ -65,10 +83,10 @@ export default function Layout({ children }) {
                 href="https://calendly.com/paulmaggio56"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center text-gray-700 hover:text-blue-600 transition-all duration-200"
+                className="flex items-center text-gray-700 hover:text-mosaics-dark transition-all duration-200"
               >
-                <Calendar className="w-4 h-4 mr-2 text-blue-500" />
-                Book a Call&nbsp;&nbsp;&nbsp;
+                <Calendar className="w-4 h-4 mr-2 text-mosaics-teal" />
+                Book a Call
               </a>
             </li>
           </ul>
@@ -80,8 +98,8 @@ export default function Layout({ children }) {
 
       {/* Footer */}
       <footer className="container mx-auto p-6 text-center text-sm text-gray-500">
-        &copy; {new Date().getFullYear()} StratBot. All rights reserved.
+        &copy; 2025 Mosaics AI, LLC. All rights reserved.
       </footer>
     </div>
-  )
+  );
 }

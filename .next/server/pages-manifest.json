@@ -2,7 +2,7 @@
   "/_app": "pages/_app.js",
   "/_error": "pages/_error.js",
   "/_document": "pages/_document.js",
+  "/services/scale": "pages/services/scale.js",
   "/services/scale-syllabus": "pages/services/scale-syllabus.js",
-  "/": "pages/index.js",
-  "/contact": "pages/contact.js"
+  "/": "pages/index.js"
 }

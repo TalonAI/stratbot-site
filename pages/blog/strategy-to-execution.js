@@ -30,7 +30,7 @@ export default function StrategyToExecutionPost() {
             </p>
 
             <div className="mb-8">
-              <h2><strong>1. Turn Clarity Into Process</strong></h2>
+              <h2 className="text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-mosaics-dark to-mosaics-purple">1. Turn Clarity Into Process</h2>
               <p>
                 Strategy starts with knowing what matters and what creates noise. Before automating, delegating, or hiring—document the 3-5 decisions that actually move the business forward. These should drive your weekly focus and guide team behavior.
               </p>
@@ -40,7 +40,7 @@ export default function StrategyToExecutionPost() {
             </div>
 
             <div className="mb-8">
-              <h2><strong>2. Delegate with Filters, Not Feelings</strong></h2>
+              <h2 className="text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-mosaics-dark to-mosaics-purple">2. Delegate with Filters, Not Feelings</h2>
               <p>
                 Most founders struggle to let go because they haven’t installed decision filters. A good delegation system answers: “What should come back to me, and what should my team just handle?”
               </p>
@@ -50,7 +50,7 @@ export default function StrategyToExecutionPost() {
             </div>
 
             <div className="mb-8">
-              <h2><strong>3. Build SOPs from the Real World, Not an Ops Manual</strong></h2>
+              <h2 className="text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-mosaics-dark to-mosaics-purple">3. Build SOPs from the Real World, Not an Ops Manual</h2>
               <p>
                 Founders don’t need another template—they need to capture what already works. We build SOPs using live Loom recordings of repeatable actions, wrapped with GPT-powered prompts that let future team members use and adapt them on demand.
               </p>
@@ -60,7 +60,7 @@ export default function StrategyToExecutionPost() {
             </div>
 
             <div className="mb-8">
-              <h2><strong>4. Deploy GPTs as Execution Multipliers</strong></h2>
+              <h2 className="text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-mosaics-dark to-mosaics-purple">4. Deploy GPTs as Execution Multipliers</h2>
               <p>
                 AI is only useful when it disappears into your workflow. Strategic GPTs—what we call Clarity Engines, Ops Assistants, and Delegation Companions—help owners:
               </p>
@@ -75,7 +75,7 @@ export default function StrategyToExecutionPost() {
             </div>
 
             <div className="mb-8">
-              <h2><strong>5. From Chaos to Cadence</strong></h2>
+              <h2 className="text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-mosaics-dark to-mosaics-purple">5. From Chaos to Cadence</h2>
               <p>
                 What changes a business isn’t one big transformation—it’s the weekly rhythm that compounds over time. Our 6-Week Ops Cadence helps owners install that rhythm and graduate with a repeatable architecture that frees up their brain.
               </p>
@@ -85,7 +85,7 @@ export default function StrategyToExecutionPost() {
             </div>
 
             <div className="mb-8">
-              <h2><strong>Final Thought</strong></h2>
+              <h2 className="text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-mosaics-dark to-mosaics-purple">Final Thought</h2>
               <p>
                 If you're a founder spending more time reacting than leading, this isn't a capacity issue—it's a systems gap. The good news? Installing one doesn’t require hiring a COO. It just takes clarity, commitment, and a framework that fits your business.
               </p>
@@ -94,7 +94,7 @@ export default function StrategyToExecutionPost() {
         </article>
 
         <div className="mt-12 pt-8 border-t border-gray-200">
-          <h3 className="text-xl font-bold mb-4">Ready to install your execution system?</h3>
+          <h3 className="text-xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-mosaics-dark to-mosaics-purple mb-4">Ready to install your execution system?</h3>
           <p className="mb-6">
             The 6-Week Ops Cadence is built for new owners ready to lead with rhythm instead of reaction. We’ll help you build the system once—and scale it for years.
           </p>

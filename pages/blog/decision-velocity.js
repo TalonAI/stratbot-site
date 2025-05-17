@@ -32,7 +32,7 @@ export default function DecisionVelocityPost() {
             </p>
 
             <div className="mb-8">
-              <h2><strong>What is Decision Velocity?</strong></h2>
+              <h2 className="text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-mosaics-dark to-mosaics-purple">What is Decision Velocity?</h2>
               <p>
                 Decision velocity refers to the speed and quality of decision-making within an organization. It's not just
                 about making quick decisions, but making the right decisions quickly enough to capitalize on opportunities
@@ -52,7 +52,7 @@ export default function DecisionVelocityPost() {
             </div>
 
             <div className="mb-8">
-              <h2><strong>The Cost of Decision Delay</strong></h2>
+              <h2 className="text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-mosaics-dark to-mosaics-purple">The Cost of Decision Delay</h2>
               <p>
                 Every delayed decision has a cost. Sometimes that cost is obvious—a missed market opportunity or a
                 competitor gaining ground. But often, the costs are hidden:
@@ -66,14 +66,14 @@ export default function DecisionVelocityPost() {
             </div>
 
             <div className="mb-8">
-              <h2><strong>Building Your Decision Velocity System</strong></h2>
+              <h2 className="text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-mosaics-dark to-mosaics-purple">Building Your Decision Velocity System</h2>
               <p>
                 The good news is that decision velocity can be systematized. Here are key components of a high-functioning
                 decision system:
               </p>
 
               <div className="mb-6">
-                <h3><strong>1. Clear Decision Criteria</strong></h3>
+                <h3 className="text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-mosaics-dark to-mosaics-purple">1. Clear Decision Criteria</h3>
                 <p>
                   Establish clear criteria for different types of decisions before you need to make them. This creates
                   guardrails that make the decision process more efficient.
@@ -81,7 +81,7 @@ export default function DecisionVelocityPost() {
               </div>
 
               <div className="mb-6">
-                <h3><strong>2. Decision Thresholds</strong></h3>
+                <h3 className="text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-mosaics-dark to-mosaics-purple">2. Decision Thresholds</h3>
                 <p>
                   Not all decisions deserve the same level of analysis. Create thresholds that determine how much time and
                   resources to allocate to different decisions based on their impact and reversibility.
@@ -89,7 +89,7 @@ export default function DecisionVelocityPost() {
               </div>
 
               <div className="mb-6">
-                <h3><strong>3. Information Flows</strong></h3>
+                <h3 className="text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-mosaics-dark to-mosaics-purple">3. Information Flows</h3>
                 <p>
                   Design systems that ensure you have the right information at the right time. This might include
                   dashboards, regular reports, or AI tools that surface relevant insights.
@@ -97,7 +97,7 @@ export default function DecisionVelocityPost() {
               </div>
 
               <div className="mb-6">
-                <h3><strong>4. Decision Journals</strong></h3>
+                <h3 className="text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-mosaics-dark to-mosaics-purple">4. Decision Journals</h3>
                 <p>
                   Track your decisions, the context in which they were made, and their outcomes. This creates a feedback
                   loop that improves future decision quality.
@@ -106,7 +106,7 @@ export default function DecisionVelocityPost() {
             </div>
 
             <div className="mb-8">
-              <h2><strong>AI as a Decision Velocity Multiplier</strong></h2>
+              <h2 className="text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-mosaics-dark to-mosaics-purple">AI as a Decision Velocity Multiplier</h2>
               <p>Strategic AI tools can significantly enhance decision velocity by:</p>
               <ul>
                 <li>Processing vast amounts of information quickly</li>
@@ -121,7 +121,7 @@ export default function DecisionVelocityPost() {
             </div>
 
             <div className="mb-8">
-              <h2><strong>Conclusion</strong></h2>
+              <h2 className="text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-mosaics-dark to-mosaics-purple">Conclusion</h2>
               <p>
                 In a world where change is constant and opportunities are fleeting, decision velocity becomes a critical
                 competitive advantage. High-agency leaders don't just make fast decisions; they build systems that enable
@@ -136,7 +136,7 @@ export default function DecisionVelocityPost() {
         </article>
 
         <div className="mt-12 pt-8 border-t border-gray-200">
-          <h3 className="text-xl font-bold mb-4">Ready to increase your decision velocity?</h3>
+          <h3 className="text-xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-mosaics-dark to-mosaics-purple mb-4">Ready to increase your decision velocity?</h3>
           <p className="mb-6">
             Learn how our Strategic GPTs and Execution Stacks can help you build a high-performance decision system.
           </p>

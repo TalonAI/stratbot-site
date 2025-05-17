@@ -17,7 +17,7 @@ export default function Services() {
   return (
     <Layout>
       <div className="max-w-5xl mx-auto px-6 py-12">
-        <h1 className="text-4xl font-bold text-center mb-12 bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-indigo-700">
+        <h1 className="text-4xl font-bold text-center mb-12 bg-clip-text text-transparent bg-gradient-to-r from-mosaics-dark to-mosaics-purple">
           Execution Stacks
         </h1>
 
@@ -28,8 +28,8 @@ export default function Services() {
 
         <div className="grid md:grid-cols-3 gap-8 mt-12">
           {/* Clarity Stack */}
-          <div className="bg-white p-8 rounded-2xl shadow-lg border-t-4 border-blue-500 hover:shadow-xl transition transform hover:-translate-y-1">
-            <h2 className="text-2xl font-bold mb-4 text-blue-700">Clarity Stack</h2>
+          <div className="bg-white p-8 rounded-2xl shadow-lg border-t-4 border-mosaics-teal hover:shadow-xl transition transform hover:-translate-y-1">
+            <h2 className="text-2xl font-bold mb-4 text-mosaics-dark">Clarity Stack</h2>
             <p className="text-gray-700 mb-6">
               Get unstuck and create a clear path forward. Perfect for founders and leaders who need to break through
               decision paralysis.
@@ -48,15 +48,15 @@ export default function Services() {
             </ul>
             <Link
               href="/services/clarity"
-              className="inline-block bg-gradient-to-r from-blue-600 to-indigo-700 text-white font-medium px-6 py-3 rounded-lg hover:opacity-90 transition"
+              className="inline-block bg-gradient-to-r from-mosaics-dark to-mosaics-purple text-white font-medium px-6 py-3 rounded-lg hover:opacity-90 transition"
             >
               Explore Clarity Stack →
             </Link>
           </div>
 
           {/* Command Stack */}
-          <div className="bg-white p-8 rounded-2xl shadow-lg border-t-4 border-blue-500 hover:shadow-xl transition transform hover:-translate-y-1">
-            <h2 className="text-2xl font-bold mb-4 text-blue-700">Command Stack</h2>
+          <div className="bg-white p-8 rounded-2xl shadow-lg border-t-4 border-mosaics-teal hover:shadow-xl transition transform hover:-translate-y-1">
+            <h2 className="text-2xl font-bold mb-4 text-mosaics-dark">Command Stack</h2>
             <p className="text-gray-700 mb-6">
               Stand up core SOPs, negotiation aids, and live dashboards with your leadership team—so you can stop firefighting
               and start commanding your operations.
@@ -71,15 +71,15 @@ export default function Services() {
             </ul>
             <Link
               href="/services/command"
-              className="inline-block bg-gradient-to-r from-blue-600 to-indigo-700 text-white font-medium px-6 py-3 rounded-lg hover:opacity-90 transition"
+              className="inline-block bg-gradient-to-r from-mosaics-dark to-mosaics-purple text-white font-medium px-6 py-3 rounded-lg hover:opacity-90 transition"
             >
               Explore Command Stack →
             </Link>
           </div>
 
           {/* Scale Stack */}
-          <div className="bg-white p-8 rounded-2xl shadow-lg border-t-4 border-blue-500 hover:shadow-xl transition transform hover:-translate-y-1">
-            <h2 className="text-2xl font-bold mb-4 text-blue-700">Scale Stack</h2>
+          <div className="bg-white p-8 rounded-2xl shadow-lg border-t-4 border-mosaics-teal hover:shadow-xl transition transform hover:-translate-y-1">
+            <h2 className="text-2xl font-bold mb-4 text-mosaics-dark">Scale Stack</h2>
             <p className="text-gray-700 mb-6">
               Accelerate growth and expand your impact. Perfect for established businesses ready to reach the next
               level through our 6-week AI Operational Leadership training program.
@@ -98,7 +98,7 @@ export default function Services() {
             </ul>
             <Link
               href="/services/scale"
-              className="inline-block bg-gradient-to-r from-blue-600 to-indigo-700 text-white font-medium px-6 py-3 rounded-lg hover:opacity-90 transition"
+              className="inline-block bg-gradient-to-r from-mosaics-dark to-mosaics-purple text-white font-medium px-6 py-3 rounded-lg hover:opacity-90 transition"
             >
               Explore Scale Stack →
             </Link>

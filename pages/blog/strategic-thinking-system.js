@@ -30,7 +30,7 @@ export default function StrategicThinkingSystemPost() {
             </p>
 
             <div className="mb-8">
-              <h2><strong>1. Start With Your Defaults, Not Your Goals</strong></h2>
+              <h2 className="text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-mosaics-dark to-mosaics-purple">1. Start With Your Defaults, Not Your Goals</h2>
               <p>
                 You don’t need a new vision board. You need a default week that reflects reality. Strategic clarity begins with how you actually spend your time—then you decide what needs to change.
               </p>
@@ -40,7 +40,7 @@ export default function StrategicThinkingSystemPost() {
             </div>
 
             <div className="mb-8">
-              <h2><strong>2. Turn Chaos Into Clarity With a Weekly Brief</strong></h2>
+              <h2 className="text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-mosaics-dark to-mosaics-purple">2. Turn Chaos Into Clarity With a Weekly Brief</h2>
               <p>
                 Most founders drown in noise. A simple 15-minute clarity brief every Monday can reduce 80% of that. Focus on three things: what matters this week, what’s unresolved, and what needs your judgment.
               </p>
@@ -50,7 +50,7 @@ export default function StrategicThinkingSystemPost() {
             </div>
 
             <div className="mb-8">
-              <h2><strong>3. Delegate Thinking, Not Just Tasks</strong></h2>
+              <h2 className="text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-mosaics-dark to-mosaics-purple">3. Delegate Thinking, Not Just Tasks</h2>
               <p>
                 The real bottleneck isn’t labor—it’s leadership judgment. When you’re the only one who can make decisions, everything backs up behind you.
               </p>
@@ -60,7 +60,7 @@ export default function StrategicThinkingSystemPost() {
             </div>
 
             <div className="mb-8">
-              <h2><strong>4. Track Decisions, Not Just Metrics</strong></h2>
+              <h2 className="text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-mosaics-dark to-mosaics-purple">4. Track Decisions, Not Just Metrics</h2>
               <p>
                 Every founder tracks KPIs. Few track how they made the decisions that got them there. That’s a missed opportunity.
               </p>
@@ -70,7 +70,7 @@ export default function StrategicThinkingSystemPost() {
             </div>
 
             <div className="mb-8">
-              <h2><strong>5. Run a Thinking System, Not a Fire Drill</strong></h2>
+              <h2 className="text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-mosaics-dark to-mosaics-purple">5. Run a Thinking System, Not a Fire Drill</h2>
               <p>
                 When your thinking system is working, things get quieter. You stop solving the same problem twice. Your calendar reflects your priorities. The team moves without checking in constantly.
               </p>
@@ -80,7 +80,7 @@ export default function StrategicThinkingSystemPost() {
             </div>
 
             <div className="mb-8">
-              <h2><strong>Final Thought</strong></h2>
+              <h2 className="text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-mosaics-dark to-mosaics-purple">Final Thought</h2>
               <p>
                 This isn’t about software. It’s about how you think—on purpose, with structure, every week. You don’t need another tool. You need a system that thinks like you when things get messy.
               </p>
@@ -89,7 +89,7 @@ export default function StrategicThinkingSystemPost() {
         </article>
 
         <div className="mt-12 pt-8 border-t border-gray-200">
-          <h3 className="text-xl font-bold mb-4">Want help installing your thinking system?</h3>
+          <h3 className="text-xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-mosaics-dark to-mosaics-purple mb-4">Want help installing your thinking system?</h3>
           <p className="mb-6">
             We built the 6-Week Ops Cadence to do exactly this—clarity, rhythm, and real delegation for post-acquisition chaos. 
           </p>

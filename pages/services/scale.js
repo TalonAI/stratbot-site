@@ -9,13 +9,13 @@ export default function ScaleStack() {
         {/* Back link */}
         <Link
           href="/services"
-          className="flex items-center text-blue-600 mb-8 hover:text-blue-800"
+          className="flex items-center text-mosaics-dark mb-8 hover:text-mosaics-purple"
         >
           <ChevronLeft className="w-5 h-5 mr-2" /> Back to All Stacks
         </Link>
 
         {/* Header & overview */}
-        <h1 className="text-4xl font-bold mb-4">Scale Stack — AI Team Training Program</h1>
+        <h1 className="text-4xl font-bold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-mosaics-dark to-mosaics-purple">Scale Stack — AI Team Training Program</h1>
         <p className="mb-8 text-lg text-gray-700">
           Empower your entire team to leverage AI, establish operating rhythms, and scale your business.
           This hands-on program is delivered as a 6-week live cohort class, designed to multiply staff impact
@@ -45,7 +45,7 @@ export default function ScaleStack() {
         {/* CTA to full syllabus */}
         <Link
           href="/services/scale-syllabus"
-          className="inline-flex items-center bg-blue-600 text-white font-medium px-6 py-3 rounded-lg hover:bg-blue-700 transition"
+          className="inline-flex items-center bg-mosaics-dark text-white font-medium px-6 py-3 rounded-lg hover:bg-mosaics-teal transition"
         >
           View Full 6-Week Syllabus <ChevronRight className="ml-2 w-5 h-5" />
         </Link>

@@ -70,20 +70,20 @@ export default function ScaleSyllabus() {
   return (
     <Layout>
       <div className="max-w-4xl mx-auto px-6 py-12">
-        <Link href="/services/scale" className="flex items-center text-blue-600 mb-8 hover:text-blue-800">
+        <Link href="/services/scale" className="flex items-center text-mosaics-dark mb-8 hover:text-mosaics-purple">
           <ChevronLeft className="w-5 h-5 mr-2" /> Back to Scale Stack
         </Link>
 
-        <h1 className="text-4xl font-bold mb-4">Scale Stack — Full 6-Week Syllabus</h1>
+        <h1 className="text-4xl font-bold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-mosaics-dark to-mosaics-purple bg-clip-text text-transparent bg-gradient-to-r from-mosaics-dark to-mosaics-purple">Scale Stack — Full 6-Week Syllabus</h1>
         <p className="text-gray-700 mb-8">
           Dive deep into each week’s agenda, pre-work, live exercises, and post-session deliverables—designed to install a
           robust, team-wide operating rhythm.
         </p>
 
-        <Accordion type="single" collapsible className="space-y-4">
+        <Accordion type="multiple" collapsible className="space-y-4">
           {weeks.map((w, i) => (
             <AccordionItem key={i} value={`week-${i}`}>
-              <AccordionTrigger>{w.title}</AccordionTrigger>
+              <AccordionTrigger className="text-xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-mosaics-dark to-mosaics-purple">{w.title}</AccordionTrigger>
               <AccordionContent>
                 <ul className="mt-2 space-y-2">
                   {w.details.map(({ label, text }) => (
