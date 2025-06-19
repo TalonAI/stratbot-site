@@ -2,10 +2,6 @@
   "/_app": "pages/_app.js",
   "/_error": "pages/_error.js",
   "/_document": "pages/_document.js",
-  "/team": "pages/team.js",
   "/": "pages/index.js",
-  "/blog": "pages/blog.js",
-  "/contact": "pages/contact.js",
-  "/strategic-advisory": "pages/strategic-advisory.js",
-  "/tactical-tools": "pages/tactical-tools.js"
+  "/community/how-do-i-use-ai": "pages/community/how-do-i-use-ai.js"
 }
