@@ -3,100 +3,86 @@ import { useEffect, useState } from 'react';
 import { supabase } from '../supabase';
 
 export default function CommunityWall() {
-  const [ideas, setIdeas] = useState([]);
-  const [loading, setLoading] = useState(true);
+  const [topIdeas, setTopIdeas] = useState([]);
 
   useEffect(() => {
-    async function fetchRatedIdeas() {
-      setLoading(true);
-
-      // Step 1: Get all ratings
-      const { data: ratings, error: ratingsError } = await supabase
+    const fetchCommunityIdeas = async () => {
+      const { data, error } = await supabase
         .from('ratings')
-        .select('idea_id, rating');
+        .select('idea_id, rating')
+        .order('timestamp', { ascending: false });
 
-      if (ratingsError) {
-        console.error('Error fetching ratings:', ratingsError);
-        setLoading(false);
+      if (error) {
+        console.error('❌ Failed to fetch ratings:', error);
         return;
       }
 
-      // Step 2: Group ratings by idea_id
-      const ratingMap = new Map();
-
-      for (const { idea_id, rating } of ratings) {
-        if (!ratingMap.has(idea_id)) {
-          ratingMap.set(idea_id, []);
+      // Aggregate ratings by idea_id
+      const ratingMap = {};
+      data.forEach(({ idea_id, rating }) => {
+        if (!ratingMap[idea_id]) {
+          ratingMap[idea_id] = { total: 0, count: 0 };
         }
-        ratingMap.get(idea_id).push(rating);
+        ratingMap[idea_id].total += rating;
+        ratingMap[idea_id].count += 1;
+      });
+
+      // Filter to ideas with at least 1 rating
+      const filteredIdeaIds = Object.keys(ratingMap).filter(id => ratingMap[id].count >= 1);
+
+      if (filteredIdeaIds.length === 0) {
+        setTopIdeas([]);
+        return;
       }
 
-      // Step 3: Filter for ideas with at least 1 rating and calculate averages
-      const ratedIdeaIds = [];
-      const averageMap = new Map();
-
-      for (const [idea_id, ratingsList] of ratingMap.entries()) {
-        if (ratingsList.length >= 1) {
-          const sum = ratingsList.reduce((a, b) => a + b, 0);
-          const average = sum / ratingsList.length;
-          ratedIdeaIds.push(idea_id);
-          averageMap.set(idea_id, average);
-        }
-      }
-
-      // Step 4: Fetch idea details
-      const { data: ideasData, error: ideasError } = await supabase
+      const { data: ideas, error: ideaError } = await supabase
         .from('ideas')
         .select('id, text')
-        .in('id', ratedIdeaIds);
+        .in('id', filteredIdeaIds);
 
-      if (ideasError) {
-        console.error('Error fetching ideas:', ideasError);
-        setLoading(false);
+      if (ideaError) {
+        console.error('❌ Failed to fetch ideas:', ideaError);
         return;
       }
 
-      // Step 5: Sort ideas by average rating
-      const sorted = ideasData
-        .map((idea) => ({
+      // Merge ratings into ideas and sort
+      const enriched = ideas.map(idea => {
+        const stats = ratingMap[idea.id];
+        return {
           ...idea,
-          average: averageMap.get(idea.id),
-        }))
-        .sort((a, b) => b.average - a.average);
+          average: (stats.total / stats.count).toFixed(2),
+          count: stats.count,
+        };
+      });
 
-      setIdeas(sorted);
-      setLoading(false);
-    }
+      enriched.sort((a, b) => b.average - a.average);
 
-    fetchRatedIdeas();
+      // ✅ Limit to top 10
+      setTopIdeas(enriched.slice(0, 10));
+    };
+
+    fetchCommunityIdeas();
   }, []);
 
   return (
-    <div className="max-w-3xl mx-auto bg-white p-8 rounded-xl shadow-lg space-y-6">
-      <h2 className="text-2xl font-bold text-blue-900 text-center">
-        Top Community AI Ideas
-      </h2>
-      <p className="text-center text-gray-600">
+    <div className="max-w-3xl mx-auto bg-white p-8 rounded-xl shadow-lg space-y-6 mt-8">
+      <h2 className="text-2xl font-bold text-blue-900 text-center">Top Community AI Ideas</h2>
+      <p className="text-center text-sm text-blue-800 font-medium">Top 10 AI Use Ideas</p>
+      <p className="text-center text-gray-600 mb-4">
         Sorted by average rating (based on community feedback)
       </p>
 
-      {loading ? (
-        <p className="text-center text-gray-500">Loading ideas...</p>
-      ) : ideas.length === 0 ? (
-        <p className="text-center text-gray-500">
-          Not enough ratings yet. Be the first to contribute!
-        </p>
+      {topIdeas.length === 0 ? (
+        <p className="text-center text-gray-500">Not enough ratings yet. Be the first to contribute!</p>
       ) : (
         <ul className="space-y-4">
-          {ideas.map((idea) => (
+          {topIdeas.map(idea => (
             <li
               key={idea.id}
-              className="bg-gray-100 p-4 rounded-lg shadow-sm"
+              className="bg-gray-100 rounded-lg p-4 shadow-sm border border-gray-200"
             >
-              <div className="text-blue-900 font-medium">{idea.text}</div>
-              <div className="text-sm text-gray-500 mt-1">
-                Average rating: {idea.average.toFixed(2)}
-              </div>
+              <p className="font-medium text-blue-800">{idea.text}</p>
+              <p className="text-sm text-gray-600">Average rating: {idea.average}</p>
             </li>
           ))}
         </ul>
@@ -104,4 +90,3 @@ export default function CommunityWall() {
     </div>
   );
 }
-
