@@ -25,10 +25,15 @@ globalThis.__BUILD_MANIFEST = {
       "static/chunks/main.js",
       "static/chunks/pages/_error.js"
     ],
-    "/community/how-do-i-use-ai": [
+    "/tactical-tools": [
       "static/chunks/webpack.js",
       "static/chunks/main.js",
-      "static/chunks/pages/community/how-do-i-use-ai.js"
+      "static/chunks/pages/tactical-tools.js"
+    ],
+    "/team": [
+      "static/chunks/webpack.js",
+      "static/chunks/main.js",
+      "static/chunks/pages/team.js"
     ]
   },
   "ampFirstPages": []
